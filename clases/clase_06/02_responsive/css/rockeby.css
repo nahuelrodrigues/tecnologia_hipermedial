@@ -1,0 +1,213 @@
+/* INSPIRACION DISENIO = http://www.rikcat.com/ */
+
+body{
+	color: #C3C3C3;
+	font: normal 100%/1.125  "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+	background-color: #1E1E1E;
+}
+
+/*  RICHARD RUTTER technique
+
+h1 --> font-size:2.25em;   16x2.25=36 
+h2 --> font-size:1.5em;    16x1.5=24 
+h3 --> font-size:1.125em;  16x1.125=18  
+h4 --> font-size:0.875em;  16x0.875=14 
+p  --> font-size:0.75em;   16x0.75=12 */ 
+
+p, li{
+  font-size:0.875em;
+  line-height: 1.41;
+}
+
+.audible{
+	position: absolute;
+	text-indent: -9999px;
+}
+
+/* ---------------- 
+				LAYOUT
+------------------ */
+
+#contenedor{
+	width: 96%;
+	margin: 0 0 0 3%;
+	}	
+	
+header{ width: 100%; margin-bottom: 43px;}
+
+#navegacion {
+	width: 19.0625%;
+	/* 183px / 960px * 100 = 19.0625 */
+	float: left;
+	/* margin porcentaje del elemento que contiene a #navegacion */
+}
+
+#textoObra{ 
+	float: left;
+	width: 46.97916666666667%; /*451px*/
+	margin-left: 4.583333333333%;
+	/*background: url(../img/bckg/full01_003.jpg) repeat-x left bottom;*/
+	/*background-size: contain;*/ /*contain cover*/
+}
+
+#textoObra img, #textoObra embed, #textoObra object, #textoObra video {
+	max-width: 100%;
+	/* sacar width y height en el img */
+}
+
+	/* tecnica para embebidos con iframe (youtube, vimeo, etc)
+	http://webdesignerwall.com/tutorials/css-elastic-videos */
+
+	/* tecnica para cortar imagen */
+	/*#textoObra { overflow: hidden;}
+	#textoObra img { display: block; max-width: auto; }
+	*/
+
+aside{
+	float: right;
+	width: 21.3541666666667%; /*205px*/
+	margin-right: 2.08333333333%; /*20*/
+}
+
+footer{ 
+	clear: both;
+	width: 46.97%;
+	margin: 0 auto;
+	padding: 30px 0;
+	color: #666;
+	}
+	
+
+/* ---------------- 
+		ENCABEZADO
+------------------ */
+
+	.linkHome{
+		border-bottom: 1px dotted #666;
+		margin-bottom: 26px;
+	}
+
+	.linkHome a{
+		background: url(../img/logo_rockeby.png) no-repeat 0 18px;
+		display: block;
+		height: 84px;
+		width: 160px;
+		text-indent: -9999px;
+		overflow: hidden;
+	}
+	
+  header .tituloObra{
+		width: 62.70833333333333%;/*602px*/
+	}
+	
+	header h1, header .tipologia{ 
+		font: bold 2.6em/1 Arial, Helvetica, sans-serif;
+		color: #FFF;
+		margin-bottom: 13px;
+	}
+	
+		header .tipologia{ 
+			color: #0099CC;
+			margin-bottom: 11px;
+			font-size: 1.3em;
+			font-style: normal;
+			margin-left: 2px;
+		}
+			
+		header p{
+			font: italic 1.0625em/1.51 Georgia, "Times New Roman", Times, serif;
+		}
+		
+/* -------------------------------- 
+		 NAVEGACION OBRA (1ra columna)
+----------------------------------- */
+
+	#navegacion li { 
+		margin-bottom: 2px; /* Evitamos el WhiteSpace bug en IE6 */
+		}
+
+		#navegacion a {
+			display:block;
+			background-color: #323232;
+			border-bottom: 1px solid #3E3E3E;
+			border-right: 1px solid #3E3E3E;
+			color:#C3C3C3;		
+			text-decoration: none;
+			font-weight: bold;
+			padding: 6px 0 6px 12px;
+			}
+			
+		#navegacion a:hover/*,  #navegacion .activo a*/{
+			background-color: #0099CC;
+			color: #FFF;
+			}
+
+
+/* ------------------------------ 
+			TEXTO OBRA (2da columna)
+--------------------------------- */
+
+
+		#textoObra p{ margin-bottom: 1.5em;}
+		
+		#textoObra img{ border: 3px solid #A6CA3F; margin-bottom: 10px;}
+		
+		#textoObra p b{ color: #A6CA3F}
+			
+		#textoObra .epigrafe{ 
+			font-size: 0.75em;
+			margin-bottom: 25px;
+			margin-left: 3px;
+			}
+		
+		#textoObra a, aside a {
+			color: #A6CA3F;
+			text-decoration: none;
+			border-bottom: 1px solid #62742F;
+			}
+		
+		#textoObra a:hover, aside a:hover { color: #0099CC; border-bottom: 1px solid #0F5C75;}
+
+
+/* ------------------------------- 
+			CRONOLOGIA (3ra columna)
+--------------------------------- */
+
+	aside h2{ 
+		font-size: 0.9375em;
+		font-weight: bold;
+		color: #0099CC;
+		margin-bottom: 10px;
+	}
+	
+	aside h3{ 
+    font-size:0.75em;
+		font-weight: bold;
+		color: #FFF;
+		margin-top: 12px;
+		margin-bottom: 5px;
+		} 
+		
+		aside p, aside li, footer small{ font-size:0.75em;	}
+		
+/* ---------------- 
+		MEDIA QUERIES
+------------------ */
+	/* 	http://www.w3.org/TR/css3-mediaqueries/#media1
+	width, height, device-width, device-height, aspect-ratio, device-aspect-ratio, color, color-index, monochrome, resolution 
+	orientation, scan, grid -> sin min- y max-
+	*/
+	
+	/* Resoluciones
+	320 pixels -> telefonos modo retrato
+	480 pixels -> telefonos modo paisaje
+	600 pixels -> tabletas como Kindle (600×800) o Nook (600×1024) en paisaje
+	768 pixels -> iPads (768×1024) modo retrato
+	1024 pixels -> iPads (1024×768) modo paisaje, monitores viejos
+	1200 pixels -> laptops y computadoras de escritorio
+	*/
+	@media screen and (max-width: 768px){
+
+		#contenedor{width: 100%; margin:0; background: red;
+		}
+	}

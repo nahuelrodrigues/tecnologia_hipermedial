@@ -1,0 +1,10 @@
+
+body {
+	font: normal 100%/1.125  "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+	background-color:#111;
+}
+
+canvas { 
+	display: block;
+	margin:80px 50px;
+}

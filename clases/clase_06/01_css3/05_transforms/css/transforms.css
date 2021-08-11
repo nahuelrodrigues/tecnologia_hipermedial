@@ -1,0 +1,96 @@
+/* FUENTE DISEÑO: http://www.designspongeonline.com/ */
+
+/*********** TAGS COMUNES *************/
+body{
+	color: #333;
+	font: normal 100%/1.125 Arial, Helvetica, sans-serif;
+}
+
+/*********** LAYOUT GENERAL *************/
+
+#contenedor{
+
+}
+
+
+ul {
+	margin: 50px;
+	overflow: visible;
+}
+
+ul li{
+	float: left;
+	font-size: 0.875em;	
+}
+
+/* Transforms */
+
+ul li a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #FFF;
+	border: 1px solid #0C3271;
+	border-left: none;
+	background: #144bac;
+	-webkit-transform-origin: center center;
+	-o-transform-origin: center center;
+	-moz-transform-origin: center center;
+	transform-origin: center center;
+	transition: transform 0.3s ease-in-out;
+
+}
+
+ul li a:hover{
+	background: #14479B;
+	transform: scale(1.5);
+
+}
+
+/* Transforms */
+
+ul li a span{
+	border-top: 1px solid #81B0E1;
+	border-left: 1px solid #81B0E1;
+	display: block;
+	padding: 7px 10px 8px 10px;;
+}
+
+
+ul li:first-child  a{
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-left: 1px solid #0C3271;
+}
+
+/* por IE 8*/
+ul li:first-child  a:last-child{ padding-left: 4px; }
+ul li:first-child  span:last-child{	padding-left: 6px;}
+/* por IE 8*/
+
+ul li:first-child span{
+	border-left: none;
+}
+
+ul li:last-child  a{
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	padding-right: 4px;
+}
+
+ul li:last-child span{
+	padding-right: 6px;
+}
+
+ul li a:hover span{
+	border-top-color: #79A2CF;
+	border-left-color: #79A2CF;
+}

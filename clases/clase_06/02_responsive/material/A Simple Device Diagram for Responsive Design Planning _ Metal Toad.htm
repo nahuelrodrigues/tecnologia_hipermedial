@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" xml:lang="en" lang="en" dir="ltr" > <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en" xml:lang="en" lang="en" dir="ltr" > <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" xml:lang="en" lang="en" dir="ltr" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html style="" class=" js js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" xml:lang="en" dir="ltr" lang="en"><!--<![endif]--><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width" name="viewport">
+<link rel="shortcut icon" href="http://static2.metaltoad.com/sites/all/themes/metaltoad/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="canonical" href="http://www.metaltoad.com/blog/simple-device-diagram-responsive-design-planning">
+<link rel="alternate" type="application/rss+xml" title="Metal Toad Blog" href="http://metaltoad.com/blog/feed/">
+<meta name="generator" content="Drupal 7 (http://drupal.org)">
+<link rel="shortlink" href="http://www.metaltoad.com/node/544">
+  <title>A Simple Device Diagram for Responsive Design Planning | Metal Toad</title>
+  <link type="text/css" rel="stylesheet" href="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/css_e694FdjaesRMLFK9O-RkfFdBpDKF_JzVnK7-oP_r-68.css" media="all">
+<link type="text/css" rel="stylesheet" href="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/css_eFNSHLqW4PFu89eemqi1OOULJmq9QbG3fM-qrOiStwg.css" media="print">
+<link type="text/css" rel="stylesheet" href="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/css_IQ3nCRCNOAYZsS_LXhGNJcOuSrs737ipuLvr9vDTPHM.css" media="screen">
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://static2.metaltoad.com/sites/default/files/css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css" media="screen" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" href="http://static2.metaltoad.com/sites/default/files/css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css" media="screen" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" href="http://static2.metaltoad.com/sites/default/files/css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css" media="screen" />
+<![endif]-->
+  <script src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/all.js" id="facebook-jssdk"></script><script async="" src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/cbgapi.loaded_0"></script><script gapi_processed="true" src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/plusone.js" async="" type="text/javascript"></script><script src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/widgets.js" id="twitter-wjs"></script><script src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-2125172-2"]);_gaq.push(["_setDomainName", "www.metaltoad.com"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/jquery.js"></script>
+<script type="text/javascript" src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/js_C6gziHVdZosnB4pU2mI5rdDprDZ4b2Mki8OkSeda0HI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageState":{"theme":"boilerplate", "theme_token":"oOZcNdR1LZiZOEZ8EHNm3d2FR8_7kX23f8yrILQlpJc", "js":{"0":1, "misc\u002Fjquery.js":1, "misc\u002Fjquery.once.js":1, "misc\u002Fdrupal.js":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fjs\u002Flibs\u002Fmodernizr-2.5.3.min.js":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fjs\u002Fscript.js":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fjs\u002Fplugins.js":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fjs\u002Fjquery.cycle.min.js":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fjs\u002Fjquery.lightbox-0.5.js":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fjs\u002Fjquery.lazyload.js":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fjs\u002Fmetaltoad.js":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fjs\u002Fcss3-mediaqueries.js":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fcomment_notify\u002Fcomment_notify.js":1, "sites\u002Fall\u002Fmodules\u002Fcustom\u002Fmtmcontact\u002Fmtmcontact.js":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fgoogle_analytics_reports\u002Fgoogle_analytics_reports\u002Fgoogle_analytics_reports.js":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fgoogle_analytics\u002Fgoogleanalytics.js":1, "misc\u002Ftextarea.js":1, "modules\u002Ffilter\u002Ffilter.js":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fmollom\u002Fmollom.js":1, "misc\u002Fjquery.cookie.js":1, "misc\u002Fform.js":1}, "css":{"sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fcss\u002Fcompiled\u002Fdefault.css":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fcss\u002Fcompiled\u002Flayout.css":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fcss\u002Fcompiled\u002Fstyle.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fcomment_notify\u002Fcomment_notify.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fctools\u002Fcss\u002Fctools.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fgeshifilter\u002Fgeshifilter.css":1, "modules\u002Fsystem\u002Fsystem.base.css":1, "modules\u002Fsystem\u002Fsystem.menus.css":1, "modules\u002Fsystem\u002Fsystem.messages.css":1, "modules\u002Fsystem\u002Fsystem.theme.css":1, "modules\u002Fcomment\u002Fcomment.css":1, "modules\u002Ffield\u002Ftheme\u002Ffield.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fgoogle_analytics_reports\u002Fgoogle_analytics_reports\u002Fgoogle_analytics_reports.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fmollom\u002Fmollom.css":1, "modules\u002Fnode\u002Fnode.css":1, "modules\u002Fsearch\u002Fsearch.css":1, "modules\u002Fuser\u002Fuser.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fviews\u002Fcss\u002Fviews.css":1, "sites\u002Fall\u002Fmodules\u002Fcustom\u002Fmtm_social\u002Fsocial.css":1, "modules\u002Ffilter\u002Ffilter.css":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fcss\u002Fcompiled\u002Fprint.css":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fcss\u002Fcompiled\u002Fmobile.css":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Ffonts\u002Fmuseoslab\u002Fstylesheet.css":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fcss\u002Fie6.css":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fcss\u002Fie7.css":1, "sites\u002Fall\u002Fthemes\u002Fboilerplate\u002Fcss\u002Fie8.css":1}}, "googleAnalyticsReportsAjaxUrl":"\u002Fgoogle-analytics-reports\u002Fajax", "googleanalytics":{"trackOutbound":1, "trackMailto":1, "trackDownload":1, "trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip", "trackDomainMode":"1"}});
+//--><!]]>
+</script>
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}
+.fb_invisible{display:none}
+.fb_reset{background:none;border-spacing:0;border:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}
+.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}
+.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}
+.fb_dialog_content{background:#fff;color:#333}
+.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px;top:8px\9;right:7px\9}
+.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}
+.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}
+.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}
+.fb_dialog_top_left,
+.fb_dialog_top_right,
+.fb_dialog_bottom_left,
+.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}
+/* @noflip */
+.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}
+/* @noflip */
+.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}
+/* @noflip */
+.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}
+/* @noflip */
+.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right,
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right{width:10px;height:100%}
+.fb_dialog_vert_left{margin-left:-10px}
+.fb_dialog_vert_right{right:0;margin-right:-10px}
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{width:100%;height:10px}
+.fb_dialog_horiz_top{margin-top:-10px}
+.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}
+.fb_dialog_iframe{line-height:0}
+.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}
+.fb_dialog_content .dialog_title > span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif)
+no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}
+body.fb_hidden{-webkit-transform:none;height:100%;margin:0;left:-10000px;overflow:visible;position:absolute;top:-10000px;width:100%
+}
+.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif)
+white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}
+.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}
+#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}
+#fb-root #fb_dialog_ipad_overlay.hidden{display:none}
+.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}
+.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0 0, 0 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}
+.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%
+}
+.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0 0, 0 100%, from(#4966A6),
+color-stop(0.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset,
+rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}
+.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}
+.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}
+.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}
+#fb_dialog_loader_close{float:left}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{position:relative;display:-moz-inline-block;display:inline-block}
+.fb_iframe_widget iframe{position:absolute}
+.fb_iframe_widget_lift{z-index:1}
+.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify;vertical-align:text-bottom}
+.fb_hide_iframes iframe{position:relative;left:-10000px}
+.fb_iframe_widget_loader{position:relative;display:inline-block}
+.fb_iframe_widget_fluid{display:inline}
+.fb_iframe_widget_fluid span{width:100%}
+.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}
+.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_button_simple,
+.fb_button_simple_rtl{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yH/r/eIpbnVKI9lR.png);background-repeat:no-repeat;cursor:pointer;outline:none;text-decoration:none}
+.fb_button_simple_rtl{background-position:right 0}
+.fb_button_simple .fb_button_text{margin:0 0 0 20px;padding-bottom:1px}
+.fb_button_simple_rtl .fb_button_text{margin:0 10px 0 0}
+a.fb_button_simple:hover .fb_button_text,
+a.fb_button_simple_rtl:hover .fb_button_text,
+.fb_button_simple:hover .fb_button_text,
+.fb_button_simple_rtl:hover .fb_button_text{text-decoration:underline}
+.fb_button,
+.fb_button_rtl{background:#29447e url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/FGFbc80dUKj.png);background-repeat:no-repeat;cursor:pointer;display:inline-block;padding:0 0 0 1px;text-decoration:none;outline:none}
+.fb_button .fb_button_text,
+.fb_button_rtl .fb_button_text{background:#5f78ab url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/FGFbc80dUKj.png);border-top:solid 1px #879ac0;border-bottom:solid 1px #1a356e;color:#fff;display:block;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-weight:bold;padding:2px 6px 3px 6px;margin:1px 1px 0 21px;text-shadow:none}
+a.fb_button,
+a.fb_button_rtl,
+.fb_button,
+.fb_button_rtl{text-decoration:none}
+a.fb_button:active .fb_button_text,
+a.fb_button_rtl:active .fb_button_text,
+.fb_button:active .fb_button_text,
+.fb_button_rtl:active .fb_button_text{border-bottom:solid 1px #29447e;border-top:solid 1px #45619d;background:#4f6aa3;text-shadow:none}
+.fb_button_xlarge,
+.fb_button_xlarge_rtl{background-position:left -60px;font-size:24px;line-height:30px}
+.fb_button_xlarge .fb_button_text{padding:3px 8px 3px 12px;margin-left:38px}
+a.fb_button_xlarge:active{background-position:left -99px}
+.fb_button_xlarge_rtl{background-position:right -268px}
+.fb_button_xlarge_rtl .fb_button_text{padding:3px 8px 3px 12px;margin-right:39px}
+a.fb_button_xlarge_rtl:active{background-position:right -307px}
+.fb_button_large,
+.fb_button_large_rtl{background-position:left -138px;font-size:13px;line-height:16px}
+.fb_button_large .fb_button_text{margin-left:24px;padding:2px 6px 4px 6px}
+a.fb_button_large:active{background-position:left -163px}
+.fb_button_large_rtl{background-position:right -346px}
+.fb_button_large_rtl .fb_button_text{margin-right:25px}
+a.fb_button_large_rtl:active{background-position:right -371px}
+.fb_button_medium,
+.fb_button_medium_rtl{background-position:left -188px;font-size:11px;line-height:14px}
+a.fb_button_medium:active{background-position:left -210px}
+.fb_button_medium_rtl{background-position:right -396px}
+.fb_button_text_rtl,
+.fb_button_medium_rtl .fb_button_text{padding:2px 6px 3px 6px;margin-right:22px}
+a.fb_button_medium_rtl:active{background-position:right -418px}
+.fb_button_small,
+.fb_button_small_rtl{background-position:left -232px;font-size:10px;line-height:10px}
+.fb_button_small .fb_button_text{padding:2px 6px 3px;margin-left:17px}
+a.fb_button_small:active,
+.fb_button_small:active{background-position:left -250px}
+.fb_button_small_rtl{background-position:right -440px}
+.fb_button_small_rtl .fb_button_text{padding:2px 6px;margin-right:18px}
+a.fb_button_small_rtl:active{background-position:right -458px}
+.fb_share_count_wrapper{position:relative;float:left}
+.fb_share_count{background:#b0b9ec none repeat scroll 0 0;color:#333;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;text-align:center}
+.fb_share_count_inner{background:#e8ebf2;display:block}
+.fb_share_count_right{margin-left:-1px;display:inline-block}
+.fb_share_count_right .fb_share_count_inner{border-top:solid 1px #e8ebf2;border-bottom:solid 1px #b0b9ec;margin:1px 1px 0 1px;font-size:10px;line-height:10px;padding:2px 6px 3px;font-weight:bold}
+.fb_share_count_top{display:block;letter-spacing:-1px;line-height:34px;margin-bottom:7px;font-size:22px;border:solid 1px #b0b9ec}
+.fb_share_count_nub_top{border:none;display:block;position:absolute;left:7px;top:35px;margin:0;padding:0;width:6px;height:7px;background-repeat:no-repeat;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yU/r/bSOHtKbCGYI.png)}
+.fb_share_count_nub_right{border:none;display:inline-block;padding:0;width:5px;height:10px;background-repeat:no-repeat;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yX/r/i_oIVTKMYsL.png);vertical-align:top;background-position:right 5px;z-index:10;left:2px;margin:0 2px 0 0;position:relative}
+.fb_share_no_count{display:none}
+.fb_share_size_Small .fb_share_count_right .fb_share_count_inner{font-size:10px}
+.fb_share_size_Medium .fb_share_count_right .fb_share_count_inner{font-size:11px;padding:2px 6px 3px;letter-spacing:-1px;line-height:14px}
+.fb_share_size_Large .fb_share_count_right .fb_share_count_inner{font-size:13px;line-height:16px;padding:2px 6px 4px;font-weight:normal;letter-spacing:-1px}
+.fb_share_count_hidden .fb_share_count_nub_top,
+.fb_share_count_hidden .fb_share_count_top,
+.fb_share_count_hidden .fb_share_count_nub_right,
+.fb_share_count_hidden .fb_share_count_right{visibility:hidden}
+.fb_connect_bar_container div,
+.fb_connect_bar_container span,
+.fb_connect_bar_container a,
+.fb_connect_bar_container img,
+.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}
+.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}
+.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}
+.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}
+.fb_connect_bar a:hover{color:#fff}
+.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}
+.fb_connect_bar div a,
+.fb_connect_bar span,
+.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}
+.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fb_edge_widget_with_comment{position:relative;*z-index:1000}
+.fb_edge_widget_with_comment span.fb_edge_comment_widget{position:absolute}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget{z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget .FB_Loader{left:0;top:1px;margin-top:6px;margin-left:0;background-position:50% 50%;background-color:#fff;height:150px;width:394px;border:1px #666 solid;border-bottom:2px solid #283e6c;z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.dark .FB_Loader{background-color:#000;border-bottom:2px solid #ccc}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.siderender
+.FB_Loader{margin-top:0}
+.fbpluginrecommendationsbarleft,
+.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}
+/* @noflip */
+.fbpluginrecommendationsbarleft{left:10px}
+/* @noflip */
+.fbpluginrecommendationsbarright{right:10px}</style></head>
+<body data-twttr-rendered="true" class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-544 node-type-blog">
+  <div id="skip">
+    <a href="#main-menu">Jump to Navigation</a>
+  </div>
+    
+<div id="page">
+
+<header id="header" role="banner">
+
+  <a href="http://www.metaltoad.com/" title="Home" rel="home" id="logo">
+    <img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/logo-toad-75-white.png" alt="Metal Toad">
+  </a>
+      <p id="site-name"><strong>
+      <a href="http://www.metaltoad.com/" rel="home">
+        Metal Toad        delivers websites and mobile&nbsp;apps.      </a>
+    </strong></p>
+  
+
+  <p id="skip-link"><em><a href="#navigation">Skip to Navigation</a></em> ↓</p>
+
+</header> <!-- /#header -->
+
+
+<div id="main">
+
+<div id="content" role="main">
+      <div class="tabs"></div>
+                      <section id="block-mtm-social-extended-social-links" class="block block-mtm-social block-odd">
+
+
+<div class="content">
+  <div class="sharing">
+  <ul class="social">
+    <li class="facebook">
+      <a class="social_btn"></a>
+      <div class="share_flyout">
+          <div fb-xfbml-state="rendered" class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-send="false" data-href="http%3A%2F%2Fwww.metaltoad.com%2Fblog%2Fsimple-device-diagram-responsive-design-planning" data-layout="button_count" data-height="20" data-width="75" data-show-faces="false"><span style="height: 20px; width: 74px;"><iframe src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/like.htm" class="fb_ltr" title="Like this content on Facebook." style="border: medium none; overflow: hidden; height: 20px; width: 74px;" name="ff190234232686" id="f1f1eab066065c8" scrolling="no"></iframe></span></div>
+      </div>
+    </li>
+    <li class="twitter">
+      <a class="social_btn"></a>
+      <div class="share_flyout">
+        <iframe data-twttr-rendered="true" title="Twitter Tweet Button" style="width: 114px; height: 20px;" class="twitter-share-button twitter-count-horizontal" src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/tweet_button.htm" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+        <script>
+          !function(d,s,id) {
+            var js,fjs=d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+              js=d.createElement(s);
+              js.id=id;
+              js.src="https://platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js,fjs);
+            }
+          }(document,"script","twitter-wjs");
+        </script>
+      </div>
+    </li>
+    <li class="google_plus">
+      <a class="social_btn_gp"></a>
+      <div class="share_flyout_gp">
+        <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px;"><iframe title="+1" data-gapiattached="true" allowtransparency="true" src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/fastbutton.htm" name="I0_1366396660919" id="I0_1366396660919" vspace="0" tabindex="0" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" marginwidth="0" marginheight="0" hspace="0" frameborder="0" scrolling="no" width="100%"></iframe></div>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+      </div>
+    </li>
+    <li class="reddit">
+      <a class="social_btn"></a>
+      <div class="share_flyout">
+        <a class="reddit_button" href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.metaltoad.com%2Fblog%2Fsimple-device-diagram-responsive-design-planning&amp;title=A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning+-+Metal+Toad+Blog" title="Reddit This"></a>
+      </div>
+    </li>
+    <li class="email">
+      <a class="social_btn"></a>
+      <div class="share_flyout">
+        <a href="mailto:?subject=A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20-%20Metal%20Toad%20Blog&amp;body=http%3A%2F%2Fwww.metaltoad.com%2Fblog%2Fsimple-device-diagram-responsive-design-planning" title="Email to a Friend"></a>
+      </div>
+    </li>
+  </ul>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+
+  $('#content').click(function () { $('.share_flyout_gp').css('visibility', 'hidden');
+                                 $('.share_flyout_gp').find('iframe').css('visibility', 'hidden'); });
+  $('a.social_btn').hover(
+    function() {
+                  //hide any floating g+
+                  $('.share_flyout_gp').css('visibility', 'hidden');
+                  $('.share_flyout_gp').find('iframe').css('visibility', 'hidden');
+                  $(this).siblings('div').css('visibility', 'visible');
+               },
+    function() { $(this).siblings('div').css('visibility', 'hidden'); }
+  );
+
+  $('div.share_flyout').hover(
+    function() { $(this).css('visibility', 'visible'); },
+    function() { $(this).css('visibility', 'hidden'); }
+  );
+
+  $('a.social_btn_gp').hover(
+    function() {
+                 $(this).siblings('div').css('display', 'block');
+                 $(this).siblings('div').css('visibility', 'visible');
+                 $(this).siblings('div').find('iframe').css('visibility', 'visible');
+               },
+    function() {
+                 $(this).siblings('div').css('visibility', 'hidden');
+                 $(this).siblings('div').find('iframe').css('visibility', 'hidden');
+               }
+  );
+
+  $('div.share_flyout_gp').hover(
+    function() {
+                  $(this).css('visibility', 'visible');
+                  $(this).find('iframe').css('visibility', 'visible');
+               },
+    function() {}
+  );
+});
+</script>
+
+</div> <!-- /.content -->
+
+</section> <!-- /.block -->
+<section id="block-system-main" class="block block-system block-even">
+
+
+<div class="content">
+  
+<article id="node-544" class="node node-blog node-promoted node-odd">
+
+<header>
+        <h1>
+            A Simple Device Diagram for Responsive Design&nbsp;Planning    </h1>
+          <p class="submitted"><small>
+      by <a href="http://www.metaltoad.com/people/adam" class="name" rel="author">Adam Edgerton</a>, Director of Project Management    </small></p>
+  
+</header>
+
+<div class="content">
+    <p>At Metal Toad we're big fans of responsive design, but a common 
+snag in the responsive planning process comes when choosing what device 
+widths to design to. Just yesterday we had a big internal debate over 
+what the best widths to design to are for 3 layout sites, 4 layout 
+sites, etc. I'll get to our conclusions below, but another important 
+distinction to call out is that for each layout there are two things to 
+consider: what the pixel width range for a specific layout should be, 
+and what pixel width the designer should create the PSDs at.</p>
+<p>There are an ever-increasing number of devices with different screen 
+resolutions to take into account with a responsive design, so we put 
+together a simple but handy diagram that lists the most common device 
+widths as of the present, along with overlays for potential device width
+ ranges. A big shout out to creative partner <a href="http://sisumedia.com/" target="_blank">Sisu</a> for the inspiration to put this together.</p>
+<h2>The Diagram</h2>
+<p>Here's the result! You can also <a href="http://www.metaltoad.com/sites/default/files/Responsive-Widths_0.zip">download it in PSD format</a> and update it in the future with new devices or experiment with your own responsive width ranges in a visual format.</p>
+<p><a href="http://www.metaltoad.com/sites/default/files/Responsive-Widths_0.png" target="_blank"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/Responsive-Widths_0.png" alt="Responsive Widths Chart"></a></p>
+<p>A couple of things to note:</p>
+<ul><li>As the labeling indicates, the top of the diagram is portrait 
+orientations and the bottom is landscape orientations for devices. We 
+considered creating a more visual height/width diagram, but width is all
+ we're concerned with in a responsive design, so putting everything on 
+one axis made the most sense.</li>
+<li>iPhone and iPad (the two devices most often targeted with responsive
+ design) are listed as 320px by 480px and 768px by 1024px respectively. 
+For development purposes, this is still how the devices render a layout 
+responsively, even though the newer retina displays for iPhone 4/4S and 
+"the new iPad" have twice as many pixels horizontally and vertically. 
+However, when it comes to PSDs, try to get them designed with a width of
+ 640px and 1536px if possible, because you'll end up with crisper images
+ on the retina displays when scaling down versus scaling up. The 640px 
+and 1536px designs should be laid out as though they'll be used on a 
+320px/768px device though.</li>
+</ul><h2>Our Suggested Layouts</h2>
+<p>The debate got started yesterday because we encountered a situation 
+where only 3 layouts were called for, versus the four that Metaltoad.com
+ is designed with. Here's what we decided on:</p>
+<h3>3 Layouts</h3>
+<p>3 layouts makes things a bit tricky, because traditionally our 
+thought was to design for phone portrait, phone landscape, tablet 
+portrait, and desktop/tablet landscape. The simplest solution was to 
+combine phone landscape for larger resolution phones and tablet 
+portrait:</p>
+<p><a href="http://www.metaltoad.com/sites/default/files/Responsive-Widths-3-Layouts_0.png" target="_blank"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/Responsive-Widths-3-Layouts_0.png" alt="3 Responsive Layouts"></a></p>
+<ul><li><strong>0-519 pixels:</strong> Most all phones in portrait mode 
+will see the narrowest layout, and this can be a fluid-width layout to 
+accomodate exact screen widths. Iphone landscape will still see this 
+narrowest design.</li>
+<li><strong>520-959 pixels:</strong> Some newer Android phones with big 
+screens and large resolutions will see the middle layout in portrait 
+orientation, as will Kindle Fire, iPad, and most Android tablets in 
+portrait. Most Android phones in landscape orientation will also see 
+this layout.</li>
+<li><strong>960+ pixels:</strong> Newer big screen Android phones, 
+Kindle Fire, iPad, and most Android tablets in landscape orientation 
+will see the full width layout. This is also the layout that desktops 
+will see.</li>
+</ul><p><strong>Design Targets:</strong></p>
+<ul><li><strong>Layout 1:</strong> iPhone (320/640px) in Portrait is a 
+good candidate for the PSDs. Since this is often a fluid width layout, 
+it can grow or shrink in width to fit other devices in this layout.</li>
+<li><strong>Layout 2:</strong> iPad (768/1536px) is a good choice for the PSDs here. This layout can scale to fit other devices with the same layout.</li>
+<li><strong>Layout 3:</strong> Desktop full width (960px) fixed-width with a background generally makes the most sense for PSDs.</li>
+</ul><h3>4 Layouts</h3>
+<p>4 layouts is what we're using on Metaltoad.com. See <a href="http://www.metaltoad.com/blog/how-we-made-metal-toad-site-more-mobile-friendly-media-queries">"How we made the Metal Toad site more mobile-friendly with media queries"</a>
+ for details on our responsive implementation. Nearly a year of new 
+devices later, we still like the widths we chose to use on our site for a
+ 4 Layout approach:</p>
+<p><a href="http://www.metaltoad.com/sites/default/files/Responsive-Widths-4-Layouts_0.png" target="_blank"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/Responsive-Widths-4-Layouts_0.png" alt="4 Responsive Layouts"></a></p>
+<ul><li><strong>0-519 pixels:</strong> Most all phones in portrait mode 
+will see the narrowest layout, and this can be a fluid-width layout to 
+accomodate exact screen widths. Iphone landscape will still see this 
+narrowest design.</li>
+<li><strong>520-759 pixels:</strong> Phones with large resolutions, and 
+tablets with small resolutions (including Kindle Fire) will see this 
+layout in portrait orientation.</li>
+<li><strong>760-959 pixels:</strong> iPad and most Android tablets will 
+see this layout in portrait, and most Android phones will see this 
+layout in landscape orientation.</li>
+<li><strong>960+ pixels:</strong> Newer big screen Android phones, 
+Kindle Fire, iPad, and most Android tablets in landscape orientation 
+will see the full width layout. This is also the layout that desktops 
+will see.</li>
+</ul><p><strong>Design Targets:</strong></p>
+<ul><li><strong>Layout 1:</strong> Again, iPhone (320/640px) in Portrait
+ is a good candidate for the PSDs. Since this is often a fluid width 
+layout, it can grow or shrink in width to fit other devices in this 
+layout.</li>
+<li><strong>Layout 2:</strong> Kindle Fire at 600px is a good target device for PSDs.</li>
+<li><strong>Layout 3:</strong> Again, iPad (768/1536px) is a good choice for the PSDs here. This layout can scale to fit other devices with the same layout.</li>
+<li><strong>Layout 4:</strong> Desktop full width (960px) fixed-width with a background generally makes the most sense for PSDs.</li>
+</ul><h3>6 Layouts!</h3>
+<p>Go big or go home, right? If your project budget is bottomless and 
+you want to go for customization to the max, 6 layouts could fit the 
+bill:</p>
+<p><a href="http://www.metaltoad.com/sites/default/files/Responsive-Widths-6-Layouts_0.png" target="_blank"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/Responsive-Widths-6-Layouts_0.png" alt="4 Responsive Layouts"></a></p>
+<ul><li><strong>0-240 pixels:</strong> Older web-enabled phones and some
+ small form factor devices will see the narrowest layout, which should 
+probably be primarily text-based since there is little room to work 
+with.</li>
+<li><strong>241-399 pixels:</strong> iPhones in portrait orientation get
+ their own layout, which will also be seen on those older web-enabled 
+phones in landscape (if such a thing exists).</li>
+<li><strong>400-540 pixels:</strong> iPhones in landscape and most Android phones in portrait would see this layout.</li>
+<li><strong>541-767 pixels:</strong> A layout just for Kindle Fire in portrait orientation!</li>
+<li><strong>768-959 pixels:</strong> iPads and most tablets in portrait orientation will see this layout, as will many Android phones in landscape orientation.</li>
+<li><strong>960+ pixels:</strong> Finally, the widest layout will be viewable on most tablets in landscape, plus desktops.</li>
+</ul><p><strong>Design Targets:</strong></p>
+<ul><li><strong>Layout 1:</strong> 240px devices are naturally the width to design PSDs to for this range, likely with a fluid layout</li>
+<li><strong>Layout 2:</strong> Again, iPhone (320/640px) in Portrait is a good candidate for the PSDs for the 240-400px width range.</li>
+<li><strong>Layout 3:</strong> This design can probably be very similar to layout 2, but targeted at 480px Android phones in portrait.</li>
+<li><strong>Layout 4:</strong> A design just for Kindle Fire (600px) in portrait.</li>
+<li><strong>Layout 5:</strong> Again, iPad (768/1536px) is a good choice for the PSDs here.</li>
+<li><strong>Layout 6:</strong> Desktop full width (960px) fixed-width with a background FTW!</li>
+</ul><h2>What are Your Responsive Widths?</h2>
+<p>Hopefully that info was useful info if you're new to designing and 
+developing for responsive width ranges with target widths for designs. 
+If so, definitely <a href="http://www.metaltoad.com/sites/default/files/Responsive-Widths_0.zip">grab the diagram PSD</a>
+ and put it to good use. If you are experienced with designing for 
+responsive and either agree with us or disagree entirely, I hope you 
+take the time to leave a comment with your thoughts!</p>
+<p><i>Want more awesome content like this? <a href="http://www.metaltoad.com/newsletter">Subscribe to our newsletter!</a></i></p>
+</div> <!-- /.content -->
+
+<footer>
+  <p><small>
+        <span class="postdate">Posted on <time datetime="2012-03-12T13:19:32-07:00" pubdate="pubdate">March 12, 2012</time>.</span>
+    <span class="terms">Filed under <a href="http://www.metaltoad.com/taxonomy/term/308">responsive</a>, <a href="http://www.metaltoad.com/category/tags/responsive-web-design">responsive web design</a>, <a href="http://www.metaltoad.com/taxonomy/term/29">iPhone</a>, <a href="http://www.metaltoad.com/taxonomy/term/186">design</a>, <a href="http://www.metaltoad.com/taxonomy/term/272">ipad</a>.</span>  </small></p>
+</footer>
+
+  <aside class="authorbio">
+      <div class="bio">
+        <h3>About the Author</h3><p>As the Director of Project 
+Management, Adam leads Metal Toad's project management team to ensure 
+deadlines and budgets are met while providing a great customer 
+experience and top-notch project quality.</p><p class="bio-link"><a href="http://www.metaltoad.com/people/adam" rel="author">Learn more about Adam</a> or <a href="http://www.metaltoad.com/blog/adam">read Adam's blog</a></p></div><div class="details">
+        <div class="user-picture"><a href="http://www.metaltoad.com/people/adam"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/picture-376-1351810715_002.jpg" alt="Adam's photo" height="100" width="100"></a></div><p class="name"><a href="http://www.metaltoad.com/people/adam" class="name" rel="author">Adam Edgerton</a></p>
+        <p class="title">Director of Project Management</p>
+      </div></aside>
+<div id="comments" class="comment-wrapper">
+          <h2 class="title">Comments</h2>
+      
+  <a id="comment-1709"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/d959766fa200539d4985e025c980b729.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1709#comment-1709" class="permalink" rel="bookmark">Thanks!</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://rizzio.net/">David Rizzio</a> on
+    <time datetime="2012-03-12T09:46:30-07:00" pubdate="pubdate">March 12, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1709">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>This
+ is a great resource. It will be very useful. I know there are some 
+folks out there that feel Responsive/Adaptive Design should be device 
+independent, but realistically, it's good to think about the major 
+devices that your page/site could be viewed on for some basic layout 
+shift points.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-1710"></a>
+<article class="comment comment-by-node-author">
+
+<header>
+        <div class="user-picture">
+    <a href="http://www.metaltoad.com/people/adam" title="View user profile."><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/picture-376-1351810715.jpg" alt="adam's picture" title="adam's picture" height="48" width="48"></a>  </div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1710#comment-1710" class="permalink" rel="bookmark">You're Welcome!</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.metaltoad.com/people/adam">Adam Edgerton</a> on
+    <time datetime="2012-03-12T09:54:00-07:00" pubdate="pubdate">March 12, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1710">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Agreed
+ that a big part of the appeal of responsive is that it's device 
+independent. Part of what prompted this post was that there's no such 
+thing as a responsive width PSD, so designers generally have to target 
+some sort of device, but also keep in mind how the design will scale 
+over a given pixel range.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+</div><a id="comment-1712"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/b0b2e5b7aa788c536aa50e25ac3fe1a9.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1712#comment-1712" class="permalink" rel="bookmark">Nice</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://blake.hilscher.ca/">Blake Hilscher</a> on
+    <time datetime="2012-03-12T11:13:41-07:00" pubdate="pubdate">March 12, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1712">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Thanks
+ for putting this together, it's a nice outline that I'll definitely use
+ to plan out upcoming responsive designs. Three distinct layouts is the 
+way I'll go.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-1719"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/fd56aa367d8b55dc398ba400d42546e8.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1719#comment-1719" class="permalink" rel="bookmark">Nice post. Cant believe web</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Chrispg on
+    <time datetime="2012-03-13T22:37:16-07:00" pubdate="pubdate">March 13, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1719">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Nice
+ post. Cant believe web design is getting even more complex... Do you 
+have to use ems for responsive designs or are media queries enough?</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-1722"></a>
+<article class="comment comment-by-node-author">
+
+<header>
+        <div class="user-picture">
+    <a href="http://www.metaltoad.com/people/adam" title="View user profile."><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/picture-376-1351810715.jpg" alt="adam's picture" title="adam's picture" height="48" width="48"></a>  </div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1722#comment-1722" class="permalink" rel="bookmark">You don't have to use ems in</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.metaltoad.com/people/adam">Adam Edgerton</a> on
+    <time datetime="2012-03-14T08:18:22-07:00" pubdate="pubdate">March 14, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1722">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>You
+ don't have to use ems in responsive, but they can be helpful. Check out
+ our source for the responsive design css on metaltoad.com to get an 
+idea of how we're using them. As a project manager, I've got general 
+knowledge of coding for responsive, but if you want more details on 
+specific implementation, one of our developers could probably give you a
+ lot more insight.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+</div><a id="comment-1720"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/23d5a53f9b92a2e15313e9fe001d8a02.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1720#comment-1720" class="permalink" rel="bookmark">Useful</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://chimericdream.com/">Bill (@chimericdream)</a> on
+    <time datetime="2012-03-14T07:12:18-07:00" pubdate="pubdate">March 14, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1720">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Thank you for posting this. The amount of research you've done makes this a very good resource.</p>
+<p>I'm curious: do you plan to keep this updated (time permitting) as 
+companies continue pushing the limits of screen size and resolution?</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-1721"></a>
+<article class="comment comment-by-node-author">
+
+<header>
+        <div class="user-picture">
+    <a href="http://www.metaltoad.com/people/adam" title="View user profile."><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/picture-376-1351810715.jpg" alt="adam's picture" title="adam's picture" height="48" width="48"></a>  </div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1721#comment-1721" class="permalink" rel="bookmark">I anticipate we'll keep it</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.metaltoad.com/people/adam">Adam Edgerton</a> on
+    <time datetime="2012-03-14T08:12:21-07:00" pubdate="pubdate">March 14, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1721">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>I
+ anticipate we'll keep it updated since it's a tool we plan to use 
+internally for design planning with our clients. It wouldn't take much 
+more effort to keep the blog post updated, so I see no reason why we 
+won't do that as well.</p>
+<p>Thanks!</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+</div><a id="comment-1724"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/9ad985cd187252a2af747d029de7e7bb.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1724#comment-1724" class="permalink" rel="bookmark">This is indeed a fantastic</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.olliejdesign.com/">Ali J Taylor</a> on
+    <time datetime="2012-03-14T12:00:23-07:00" pubdate="pubdate">March 14, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1724">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>This
+ is indeed a fantastic article; one that I'll be referencing frequently 
+not only for my personal planning but also to better explain the method 
+&amp; benefits to my clients.<br>
+I could've used this late last night actually to explain to another 
+designer friend who's learning web design and beginning the 
+responsive/adaptive path. He was debating whether to use percentages vs 
+ems in determining what font size to use and this guide would really 
+help in thinking along those terms.<br>
+Thanks!</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-1725"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/a95e3c6db924cf94ebdda363cd2a899c.png" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1725#comment-1725" class="permalink" rel="bookmark">Helpful</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://graemepirie.com/">Graeme</a> on
+    <time datetime="2012-03-15T02:38:47-07:00" pubdate="pubdate">March 15, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1725">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>This
+ looks a very helpful resource, but how do you deal with individual 
+breakpoints? I agree that having something to visualise is a good idea 
+and setting up the width is a good idea, but depending on the design, 
+breakpoints will be at different widths and won't necessarily fit into 
+these structures.</p>
+<p>How do you present these designs to clients? Is it the mockups at different widths or a responsive wireframe?</p>
+<p>Thanks for sharing this though, will be handy.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-1728"></a>
+<article class="comment comment-by-node-author">
+
+<header>
+        <div class="user-picture">
+    <a href="http://www.metaltoad.com/people/adam" title="View user profile."><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/picture-376-1351810715.jpg" alt="adam's picture" title="adam's picture" height="48" width="48"></a>  </div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1728#comment-1728" class="permalink" rel="bookmark">Graeme,</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.metaltoad.com/people/adam">Adam Edgerton</a> on
+    <time datetime="2012-03-15T08:29:13-07:00" pubdate="pubdate">March 15, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1728">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Graeme,</p>
+<p>See my reply to Sebastien below, but in regards to individual 
+breakpoints for layouts, we usually put them in between devices, and 
+often unless a layout is intended to be fluid-width, we'll create the 
+PSD to be the narrowest width possible for a layout. We could present 
+responsive HTML mockups to clients, but generally the budget doesn't 
+call for the extra time and effort to do so. In that case, we use the 
+target PSD widths I refer to in the post to create mockups, and then we 
+desscribe how a specific design will scale or stay fixed-width within a 
+given pixel range. It's also very helpful to have an example site. We 
+use metaltoad.com's responsive on a regular basis to show clients how 
+responsive widths work.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+</div><a id="comment-1726"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/65b23496c94a86c36a7909c51991c884.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1726#comment-1726" class="permalink" rel="bookmark">What about all the files?</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Sebastien Gignoux on
+    <time datetime="2012-03-15T03:01:26-07:00" pubdate="pubdate">March 15, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1726">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Hi Adam,</p>
+<p>Thank you for this very useful article. </p>
+<p>I was thinking that it can get easily messy with all the files : if 
+you assume 4 layouts with just 3 revisions for 5 pages, you have already
+ generated 60 files. If you assume the same for creating the wireframes 
+before the visual design, you generate 120 files. How do you currently 
+deal with that?</p>
+<p>I guess another problem is presentation of all this: you or your 
+client might not have all the devices available. How do you present all 
+the design of the different layouts to get feedback? Since display size 
+is a factor, you can't just send that by email.</p>
+<p>I know that there are tools to share mockups online, but none seems 
+to deal with that. I am looking for an idea for a StartupWeekend in two 
+weeks (<a href="http://startupweekend.org/">http://startupweekend.org/</a>) and maybe there is something worth working on here. What do you think? Don't hesitate to contact me directly.</p>
+<p>Regards</p>
+<p>Sébastien</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-1727"></a>
+<article class="comment comment-by-node-author">
+
+<header>
+        <div class="user-picture">
+    <a href="http://www.metaltoad.com/people/adam" title="View user profile."><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/picture-376-1351810715.jpg" alt="adam's picture" title="adam's picture" height="48" width="48"></a>  </div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1727#comment-1727" class="permalink" rel="bookmark">Sebastien,</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.metaltoad.com/people/adam">Adam Edgerton</a> on
+    <time datetime="2012-03-15T08:25:19-07:00" pubdate="pubdate">March 15, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1727">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Sebastien,</p>
+<p>Yes, the number of files adds up quickly, especially when wireframing
+ and multiple revisions are involved. We deal with that by making sure 
+we build the additional budget necessary for responsive design into our 
+project budgets with clients. We make the case to them that a 
+responsively designed site is still more efficient that separate native 
+apps for each device, and cost-wise it's still the most effective option
+ to design for mobile. </p>
+<p>The design process is usually streamlined by not doing responsive 
+layouts in wireframing. Instead, comps are completed for the full-width 
+desktop version and approved by the client. Once we have approved 
+full-width designs, then we take those designs and rearrange elements 
+for the responsive layouts. In this way, we're definitely not starting 
+from scratch on the responsive work, so each responsive layout can be 
+created more quickly.</p>
+<p>We use Basecamp to share files with clients, and we'll generally 
+export pngs from Photoshop for the client to review. Once we move into 
+development of the responsive site, we test on devices, but generally we
+ have clients review in their browser by changing the browser width to 
+see different layouts if they don't have devices to review on. You can 
+try it on metaltoad.com - as you drag the browser window narrower or 
+wider, our site will adjust to our different layouts.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-1733"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/65b23496c94a86c36a7909c51991c884.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1733#comment-1733" class="permalink" rel="bookmark">Thanks</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Sebastien Gignoux on
+    <time datetime="2012-03-15T14:19:08-07:00" pubdate="pubdate">March 15, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1733">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Adam,</p>
+<p>Thanks for your reply. Very useful.</p>
+<p>Do you think that tools like:<br>
+- <a href="http://www.responsinator.com/?url=www.metaltoad.com">http://www.responsinator.com/?url=www.metaltoad.com</a><br>
+or<br>
+- <a href="http://responsive.is/metaltoad.com">http://responsive.is/metaltoad.com</a></p>
+<p>Could be useful for presenting a responsive design to your clients?</p>
+<p>Regards</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-1734"></a>
+<article class="comment comment-by-node-author">
+
+<header>
+        <div class="user-picture">
+    <a href="http://www.metaltoad.com/people/adam" title="View user profile."><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/picture-376-1351810715.jpg" alt="adam's picture" title="adam's picture" height="48" width="48"></a>  </div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1734#comment-1734" class="permalink" rel="bookmark">Responsinator is a great one!</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.metaltoad.com/people/adam">Adam Edgerton</a> on
+    <time datetime="2012-03-15T14:32:27-07:00" pubdate="pubdate">March 15, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1734">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Responsinator is a great one! We've used that from time to time with clients.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-1759"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/65b23496c94a86c36a7909c51991c884.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1759#comment-1759" class="permalink" rel="bookmark">How common is responsive web</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="https://twitter.com/#%21/sgignoux">Sebastien Gignoux</a> on
+    <time datetime="2012-03-28T04:50:59-07:00" pubdate="pubdate">March 28, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1759">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Hi Adam,</p>
+<p>I am trying to find how widespread responsive design is: do you know any stats or survey?</p>
+<p>Since I haven’t found anything I am trying to do my own (super short) poll. You can access it here: <a href="http://responsive.wufoo.com/forms/z7x3x5/">http://responsive.wufoo.com/forms/z7x3x5/</a> and the results are here: <a href="https://responsive.wufoo.com/reports/z5p8q2/">https://responsive.wufoo.com/reports/z5p8q2/</a></p>
+<p>If you could help spread the word with a twit or something, that 
+would be great. I think the results will interest everybody in the web 
+design community.</p>
+<p>Thanks in advance for any help</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+</div></div><a id="comment-1751"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/34c8605fd579dad542ce70f717b9cca4.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1751#comment-1751" class="permalink" rel="bookmark">Responsive Webdesign instead of Apps</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.html5-tutorials.org/">Christina</a> on
+    <time datetime="2012-03-25T01:57:45-07:00" pubdate="pubdate">March 25, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1751">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><blockquote><p> make the case to them that a responsively designed site is still more efficient that separate native apps for each device</p></blockquote>
+<p>I think that this is a really good point, which should be pointed out
+ to all of those companies that think that they just need to have an app
+ even though they have no real use for it. I'm not interested in surfing
+ for clothes through every brand's individual app, but i wopuld like a 
+website that was remotely usable when surfing on my tablet (there are so
+ many awfull "mobile" clothing websites!).</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+</div></div><a id="comment-1731"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/c408d0147a9133887f48e649f4e578ef.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1731#comment-1731" class="permalink" rel="bookmark">Responsive</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://displaynone.me/">Badiuzzaman</a> on
+    <time datetime="2012-03-15T13:23:02-07:00" pubdate="pubdate">March 15, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1731">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Really It helpful. I bookmark this for future reading &amp; reference</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-1732"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/ef3cd3a0bdb2e04da1c7f63118064b47.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1732#comment-1732" class="permalink" rel="bookmark">Great Resource</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Cesidio DiBenedetto on
+    <time datetime="2012-03-15T14:17:59-07:00" pubdate="pubdate">March 15, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1732">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Very nice post.  Helped me wrap my head around certain ideas I want to incorporate into my framework.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-1735"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/2ad34f87140d31343b850812f7fdadde.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1735#comment-1735" class="permalink" rel="bookmark">Great little tool, have added</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Dave on
+    <time datetime="2012-03-15T21:40:10-07:00" pubdate="pubdate">March 15, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1735">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Great little tool, have added a few items and stuck in up on the wall for reference. Thanks!</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-1738"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/8a22cd300cad9879bd2a61f101adaa95.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1738#comment-1738" class="permalink" rel="bookmark">Fantastic Resource!</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://freshma.de/">Jack Keller</a> on
+    <time datetime="2012-03-18T20:24:40-07:00" pubdate="pubdate">March 18, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1738">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>I dig the resource, this will definately help a lot of people moving forward with responsive designing!</p>
+<p>Keep up the great work!</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-1743"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/e0ac2f5ea3a162020f279d17acfb1bfd.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1743#comment-1743" class="permalink" rel="bookmark">One of the bests ever!</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://edsonjunior.com/">Edson</a> on
+    <time datetime="2012-03-22T11:15:09-07:00" pubdate="pubdate">March 22, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1743">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Wondering
+ how could be nice to work in a team like yours! I'm trying to develop a
+ whole ecommerce website alone fully responsive and there is a lot of 
+issues I have to deal with. Time is against me and this detailed article
+ will help me to head up the better way to complete the job. Thank you 
+for sharing such a detailed article about this subject. Best regards!</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-1778"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/d85a3f601955383d2ea6925872c26448.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1778#comment-1778" class="permalink" rel="bookmark">thanks</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Nica Lorber on
+    <time datetime="2012-04-02T18:06:07-07:00" pubdate="pubdate">April 2, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1778">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>This is really helpful to look at visually. Thanks!</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-1817"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/048c747c87dbe0c1581b730a4368719f.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1817#comment-1817" class="permalink" rel="bookmark">Thanks!</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://aaronbregg.com/">Aaron Bregg</a> on
+    <time datetime="2012-04-29T10:32:03-07:00" pubdate="pubdate">April 29, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1817">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Adam
+ thanks for the photo of the different sizes.  I was having a pain in 
+the ass time trying to get a responsive site to look good on the Kindle 
+Fire.  With your image I was able to add a 3rd stylesheet that let the 
+design look good in Portrait mode on a Kindle. Now I can finally get my 
+new portfolio site up lol!</p>
+<p>Thanks again!</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-1819"></a>
+<article class="comment comment-by-node-author">
+
+<header>
+        <div class="user-picture">
+    <a href="http://www.metaltoad.com/people/adam" title="View user profile."><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/picture-376-1351810715.jpg" alt="adam's picture" title="adam's picture" height="48" width="48"></a>  </div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1819#comment-1819" class="permalink" rel="bookmark">Happy to help!</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.metaltoad.com/people/adam">Adam Edgerton</a> on
+    <time datetime="2012-04-30T11:19:36-07:00" pubdate="pubdate">April 30, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1819">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Happy to help!</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+</div><a id="comment-1858"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/7168dc164eea2b1cdc7f8fa1b8bf69f9.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1858#comment-1858" class="permalink" rel="bookmark">I use 5 layouts:</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Evert on
+    <time datetime="2012-06-05T04:39:09-07:00" pubdate="pubdate">June 5, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1858">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>I use 5 layouts:</p>
+<p>240px for 0-320<br>
+480px for 321-600<br>
+768px for 601-959<br>
+960px for 960-1280<br>
+1200px for 1280-inf.</p>
+<p>The last one is just an extra for large desktop monitors.<br>
+The rest adapts to fit the smallest screen in that range (so no horizontal scrolling is required).</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-1859"></a>
+<article class="comment comment-by-node-author">
+
+<header>
+        <div class="user-picture">
+    <a href="http://www.metaltoad.com/people/adam" title="View user profile."><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/picture-376-1351810715.jpg" alt="adam's picture" title="adam's picture" height="48" width="48"></a>  </div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1859#comment-1859" class="permalink" rel="bookmark">Good layouts!</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.metaltoad.com/people/adam">Adam Edgerton</a> on
+    <time datetime="2012-06-05T10:03:35-07:00" pubdate="pubdate">June 5, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1859">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>That's
+ a good breakdown. I wonder how long it is until we all have 
+mega-resolution monitors and are designing sites to HD resolution...</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+</div><a id="comment-1862"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/1b01c75df3ce9fc427d8858424e5ef39.png" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1862#comment-1862" class="permalink" rel="bookmark">Retina Displays</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.responsivedesign.is/">responsivedesign.is</a> on
+    <time datetime="2012-06-11T22:20:30-07:00" pubdate="pubdate">June 11, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1862">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>And
+ along with super wide resolutions you are right, we need to start 
+looking at the pixel density issues (or opportunities depending on where
+ you are coming from).</p>
+<p>While it won't really affect the breakpoints that you choose it is 
+something you will need to take into considerations when it comes to 
+loading background images (so yes for mediaqueries but maybe not an 
+actual physical width breakpoint) and for content based images.</p>
+<p>Very exciting times indeed.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-1965"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/106ab04c29c0deeae5e9f285a0fbed2f.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/1965#comment-1965" class="permalink" rel="bookmark">thanks very much .</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Ardi Wirawan on
+    <time datetime="2012-08-01T14:26:00-07:00" pubdate="pubdate">August 1, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/1965">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>thanks very much .<br>
+i still learn responsive design .<br>
+:D</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-2146"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/ba629bb465f462cec2596f4b7f62cb99.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/2146#comment-2146" class="permalink" rel="bookmark">Nice breakdown, explanation,</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Corey Innis on
+    <time datetime="2012-09-25T21:09:29-07:00" pubdate="pubdate">September 25, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/2146">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Nice breakdown, explanation, and diagrams.  Note, however, that the 1280px mark in your diagrams is off by about 26px.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-2250"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/704dabdadbc1cd2e49790ac8be6c49ff.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/2250#comment-2250" class="permalink" rel="bookmark">Could it be alright that will</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Fernanda.Q on
+    <time datetime="2012-11-06T10:57:40-08:00" pubdate="pubdate">November 6, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/2250">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Could it be alright that will put thing about this in my small personal wephorum if I post a reference to <a href="http://www.metaltoad.com/">www.metaltoad.com</a> ? Wish you luck!</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+<div class="indented"><a id="comment-2251"></a>
+<article class="comment">
+
+<header>
+        <div class="user-picture">
+    <a href="http://www.metaltoad.com/people/robert" title="View user profile."><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/picture-648-1352412547.jpg" alt="robert's picture" title="robert's picture" height="48" width="48"></a>  </div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/2251#comment-2251" class="permalink" rel="bookmark">Hi Fernanda - feel free to</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.metaltoad.com/people/robert">Robert Haydon</a> on
+    <time datetime="2012-11-06T11:04:46-08:00" pubdate="pubdate">November 6, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/2251">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Hi Fernanda - feel free to share this everywhere... and we'd love a link back to the original post!</p>
+<p>Thanks,<br>
+Robert</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+</div><a id="comment-2331"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/e27d0a836c2a1105a512f5a8660e290c.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/2331#comment-2331" class="permalink" rel="bookmark">Responsive solution!</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.mahmut.canga/">Mahmut Canga</a> on
+    <time datetime="2012-11-21T04:05:36-08:00" pubdate="pubdate">November 21, 2012</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/2331">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>This is a great post. It makes all pixel-boundaries clear and responsive. Thanks.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-2519"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/edfcf44c88f28e8091c3c5eb54f29b1e.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/2519#comment-2519" class="permalink" rel="bookmark">Suggested Layout Brilliance</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by <a href="http://www.chromatix.com.au/">Josh Chan</a> on
+    <time datetime="2013-03-03T20:33:29-08:00" pubdate="pubdate">March 3, 2013</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/2519">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Your
+ suggested layouts we've used soooo many times ever since we found your 
+diagram. Just dropped by to say THANK YOU, your PSD saved us from 
+tearing each other's heads off whilst arguing about 3 vs 4 width 
+responsive!</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-2532"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/941a625d4f258b0d1d70fa13d916a870.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/2532#comment-2532" class="permalink" rel="bookmark">Nice Responsive PSD explanation</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Maurizio on
+    <time datetime="2013-03-15T00:21:56-07:00" pubdate="pubdate">March 15, 2013</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/2532">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Thank you for your post and nice PSD explanation.</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-2537"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/8cdd29efbc6bc4145b1e93a806f1a716.jpg" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/2537#comment-2537" class="permalink" rel="bookmark">You need to stop thinking in fixed widths!</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by Martin Sandholt on
+    <time datetime="2013-03-18T15:39:40-07:00" pubdate="pubdate">March 18, 2013</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/2537">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>You guys should watch this screencast by Mark Boulton - he tackles the workflow a little more clever. <a href="http://www.besquare.me/session/adapting-to-responsive-design/">http://www.besquare.me/session/adapting-to-responsive-design/</a> - besides devices sizes and pixel ratio will explode in the near future so it is a good idea to be <a href="http://futurefriend.ly/">http://futurefriend.ly/</a> and stop thinking in fixed widths !</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+<a id="comment-2539"></a>
+<article class="comment comment-by-anonymous">
+
+<header>
+      <div class="user-picture"><img src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/d40e419b14bfe393b07206602ae0271a.png" alt=""></div>
+  
+  
+    <h3>
+        <a href="http://www.metaltoad.com/comment/2539#comment-2539" class="permalink" rel="bookmark">The diagram is wrong about Android sizes</a>  </h3>
+  
+  <p class="submitted"><small>
+        Posted by lolmaus on
+    <time datetime="2013-03-19T08:56:31-07:00" pubdate="pubdate">March 19, 2013</time>.
+                  [<a href="http://www.metaltoad.com/comment/reply/544/2539">Reply</a>]
+          </small></p>
+
+</header>
+
+<div class="content">
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Browsers of typical Android devices with screens 480x800 physical pixels report window width of 320x533 pixels.</p>
+<p>PS Is there an updated version of the diagram?</p>
+</div></div></div>  </div> <!-- /.content -->
+
+</article> <!-- /.comment -->
+
+      <h2 class="title comment-form">Add new comment</h2>
+    <form class="comment-form user-info-from-cookie user-info-from-cookie-processed" action="/comment/reply/544" method="post" id="comment-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Your name <span class="form-required" title="This field is required.">*</span></label>
+ <input id="edit-name" name="name" size="30" maxlength="60" class="form-text required" type="text">
+</div>
+<div class="form-item form-type-textfield form-item-mail">
+  <label for="edit-mail">E-mail <span class="form-required" title="This field is required.">*</span></label>
+ <input id="edit-mail" name="mail" size="30" maxlength="64" class="form-text required" type="text">
+<div class="description">The content of this field is kept private and will not be shown publicly.</div>
+</div>
+<div class="form-item form-type-textfield form-item-subject">
+  <label for="edit-subject">Subject </label>
+ <input id="edit-subject" name="subject" size="60" maxlength="64" class="form-text" type="text">
+</div>
+<input name="form_build_id" value="form-j9Yzaj28rlaKusDnVCdfrkEB15UaqS-SEGo9UWl6BcM" type="hidden">
+<input name="form_id" value="comment_node_blog_form" type="hidden">
+<div class="form-item form-type-checkbox form-item-notify">
+ <input id="edit-notify" name="notify" value="1" checked="checked" class="form-checkbox" type="checkbox">  <label class="option" for="edit-notify">Notify me when new comments are posted </label>
+
+</div>
+<div id="edit-notify-type" class="form-radios"><div class="form-item form-type-radio form-item-notify-type">
+ <input id="edit-notify-type-1" name="notify_type" value="1" checked="checked" class="form-radio" type="radio">  <label class="option" for="edit-notify-type-1">All comments </label>
+
+</div>
+<div class="form-item form-type-radio form-item-notify-type">
+ <input id="edit-notify-type-2" name="notify_type" value="2" class="form-radio" type="radio">  <label class="option" for="edit-notify-type-2">Replies to my comment </label>
+
+</div>
+</div><div class="field-type-text-long field-name-comment-body field-widget-text-textarea form-wrapper" id="edit-comment-body"><div id="comment-body-add-more-wrapper"><div class="text-format-wrapper"><div class="form-item form-type-textarea form-item-comment-body-und-0-value">
+  <label for="edit-comment-body-und-0-value">Comment <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea class="text-full form-textarea required" id="edit-comment-body-und-0-value" name="comment_body[und][0][value]" cols="60" rows="5"></textarea><div class="grippie"></div></div>
+</div>
+<fieldset class="filter-wrapper form-wrapper" id="edit-comment-body-und-0-format"><div class="fieldset-wrapper"><div class="filter-help form-wrapper" id="edit-comment-body-und-0-format-help"><p><a href="http://www.metaltoad.com/filter/tips" target="_blank">More information about text formats</a></p></div><div class="form-item form-type-select form-item-comment-body-und-0-format">
+  <label for="edit-comment-body-und-0-format--2">Text format </label>
+ <select class="filter-list form-select" id="edit-comment-body-und-0-format--2" name="comment_body[und][0][format]"><option value="2" selected="selected">Filtered HTML</option><option value="1">Plain text</option></select>
+</div>
+<div class="filter-guidelines form-wrapper filter-guidelines-processed" id="edit-comment-body-und-0-format-guidelines"><div style="display: block;" class="filter-guidelines-item filter-guidelines-2"><h3 style="display: none;">Filtered HTML</h3><ul class="tips"><li>Web page addresses and e-mail addresses turn into links automatically.</li><li>Allowed
+ HTML tags: &lt;a&gt; &lt;em&gt; &lt;strong&gt; &lt;cite&gt; 
+&lt;blockquote&gt; &lt;code&gt; &lt;ul&gt; &lt;ol&gt; &lt;li&gt; 
+&lt;dl&gt; &lt;dt&gt; &lt;dd&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; 
+&lt;h5&gt; &lt;p&gt; &lt;abbr&gt;</li><li>Lines and paragraphs break automatically.</li><li>You can enable syntax highlighting of source code with the following tags: <code>&lt;code&gt;</code>, <code>&lt;blockcode&gt;</code>, <code>&lt;apache&gt;</code>, <code>&lt;c&gt;</code>, <code>&lt;cpp&gt;</code>, <code>&lt;css&gt;</code>, <code>&lt;drupal5&gt;</code>, <code>&lt;drupal6&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;java&gt;</code>, <code>&lt;javascript&gt;</code>, <code>&lt;php&gt;</code>, <code>&lt;python&gt;</code>, <code>&lt;ruby&gt;</code>. The supported tag styles are: <code>&lt;foo&gt;</code>, <code>[foo]</code>.</li></ul></div><div style="display: none;" class="filter-guidelines-item filter-guidelines-1"><h3 style="display: none;">Plain text</h3><ul class="tips"><li>No HTML tags allowed.</li><li>Web page addresses and e-mail addresses turn into links automatically.</li><li>Lines and paragraphs break automatically.</li></ul></div></div></div></fieldset>
+</div>
+</div></div><div class="form-actions form-wrapper" id="edit-actions"><input id="edit-submit" name="op" value="Save" class="form-submit" type="submit"><input id="edit-preview" name="op" value="Preview" class="form-submit" type="submit"></div><input class="mollom-content-id" name="mollom[contentId]" value="" type="hidden">
+<input class="mollom-captcha-id" name="mollom[captchaId]" value="" type="hidden">
+<div style="display: none;"><div class="form-item form-type-textfield form-item-mollom-homepage">
+ <input autocomplete="off" id="edit-mollom-homepage" name="mollom[homepage]" size="60" maxlength="128" class="form-text" type="text">
+</div>
+</div><div class="description mollom-privacy">By submitting this form, you accept the <a href="http://mollom.com/web-service-privacy-policy" class="mollom-target" rel="nofollow">Mollom privacy policy</a>.</div></div></form>  </div>
+
+</article> <!-- /.node -->
+</div> <!-- /.content -->
+
+</section> <!-- /.block -->
+  </div> <!-- /#content -->
+
+
+<aside id="sidebar" role="complimentary">
+
+      <nav id="navigation" role="navigation">
+      <ul id="main-menu" class="links"><li class="menu-466 first"><a href="http://www.metaltoad.com/" title="">Home</a></li>
+<li class="menu-573"><a href="http://www.metaltoad.com/our-work" title="Work &amp; Case Studies">Work</a></li>
+<li class="menu-464"><a href="http://www.metaltoad.com/company" title="Our Company">About</a></li>
+<li class="menu-447 active-trail"><a href="http://www.metaltoad.com/blog" class="active-trail">Blog</a></li>
+<li class="menu-474 last"><a href="http://www.metaltoad.com/contact" title="">Contact</a></li>
+</ul>    </nav> <!-- /#navigation -->
+    
+  
+    <section id="block-block-19" class="block block-block block-odd first">
+
+
+<div class="content">
+  <p>Sign up for our newsletter (<a href="http://www.metaltoad.com/newsletter">back issues</a>).</p>
+<!-- Begin MailChimp Signup Form --><style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+	#mc_embed_signup{background:#F6ECCF; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+/*--><!]]>*/
+</style><div id="mc_embed_signup">
+<form action="http://metaltoad.us4.list-manage2.com/subscribe/post?u=f812f345ae422c70e3a222db6&amp;id=9e0d26a14c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+	<input name="EMAIL" class="form-text required" id="mce-EMAIL" placeholder="email address" type="email"><div class="clear"><input value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="form-button" type="submit"></div>
+</form>
+</div>
+<!--End mc_embed_signup--></div> <!-- /.content -->
+
+</section> <!-- /.block -->
+<section id="block-search-form" class="block block-search block-even">
+
+
+<div class="content">
+  <form action="/blog/simple-device-diagram-responsive-design-planning" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." id="edit-search-block-form--2" name="search_block_form" size="15" maxlength="128" class="form-text" type="search">
+</div>
+<div class="form-actions form-wrapper" id="edit-actions--2"><input id="edit-submit--2" name="op" value="Search" class="form-submit" type="submit"></div><input name="form_build_id" value="form-_SsDLrla3De6Azx_wFYU6HwYDCBidpQ51O5ldUk3e3w" type="hidden">
+<input name="form_id" value="search_block_form" type="hidden">
+</div>
+</div></form></div> <!-- /.content -->
+
+</section> <!-- /.block -->
+<section id="block-apachesolr-search-mlt-001" class="block block-apachesolr-search block-odd">
+
+  <h3>More like this</h3>
+
+<div class="content">
+  <div class="item-list"><ul><li class="first"><a href="http://www.metaltoad.com/blog/how-we-made-metal-toad-site-more-mobile-friendly-media-queries">How we made the Metal Toad site more mobile-friendly with media queries </a></li>
+<li><a href="http://www.metaltoad.com/blog/responsive-web-design-and-html5-are-future">Responsive Web Design and HTML5 are the Future</a></li>
+<li><a href="http://www.metaltoad.com/blog/why-html5-makes-sense-business">Why HTML5 Makes Sense for Business</a></li>
+<li><a href="http://www.metaltoad.com/blog/quick-and-handy-phonegap-ipad-version-detection-plugin">Quick and handy iPad version-detection plugin for PhoneGap</a></li>
+<li class="last"><a href="http://www.metaltoad.com/blog/update-our-mobile-traffic">An update on our Mobile Traffic</a></li>
+</ul></div></div> <!-- /.content -->
+
+</section> <!-- /.block -->
+  
+</aside> <!-- /#sidebar -->
+
+</div> <!-- /#main -->
+
+
+<footer id="footer" role="contentinfo">
+    <section id="block-block-2" class="block block-block block-even">
+
+
+<div class="content">
+  <p class="fineprint">
+<span class="copyright">© 2013 Metal Toad Media, Inc.</span> 
+</p>
+
+<ul class="footer-nav">
+<li><a href="http://www.metaltoad.com/podcast">Podcast</a></li>
+<li><a href="http://www.metaltoad.com/services">Services</a></li>
+<li><a href="http://www.metaltoad.com/we-love-creative-partners">Creative Partners</a></li>
+<li><a href="http://www.metaltoad.com/careers">Careers</a></li> 
+<li><a href="http://www.metaltoad.com/blog/metal-toad-media-corporate-values">Values</a></li>
+<li><a href="http://www.metaltoad.com/drupalgive">Drupalgive</a></li>
+<li class="last"><a href="http://www.metaltoad.com/sitemap.xml">Sitemap</a></li>
+</ul>
+
+<ul class="locations"> 
+<li><a href="http://www.metaltoad.com/los-angeles-web-development">Los Angeles, CA</a> 
+</li><li><a href="http://www.metaltoad.com/san-francisco-web-development">San Francisco, CA</a>
+</li><li class="last"><a href="http://www.metaltoad.com/portland-web-development">Portland, OR</a>
+</li></ul></div> <!-- /.content -->
+
+</section> <!-- /.block -->
+</footer> <!-- /#footer -->
+
+<div id="cubes"></div>
+
+</div> <!-- /#page -->
+
+<div id="backdrop"></div>
+  
+  <!-- Facebook Javascript SDK code @todo put into custom module -->
+  <div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/xd_arbiter.htm" style="border: medium none;" tab-index="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0" scrolling="no"></iframe><iframe src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/xd_arbiter_002.htm" style="border: medium none;" tab-index="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0" scrolling="no"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="A%20Simple%20Device%20Diagram%20for%20Responsive%20Design%20Planning%20_%20Metal%20Toad_archivos/oauth.htm" style="display: none;" allowtransparency="true" name="f37d5a7198c59e" frameborder="0" scrolling="no"></iframe></div></div></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=167715593270981";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
+</body></html>

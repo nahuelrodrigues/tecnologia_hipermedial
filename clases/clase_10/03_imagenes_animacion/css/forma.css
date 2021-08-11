@@ -1,0 +1,10 @@
+
+body { 
+	background-color:#FFF; 
+}
+
+canvas { 
+	display: block;
+	margin:20px auto;
+	outline:1px solid #333;
+}

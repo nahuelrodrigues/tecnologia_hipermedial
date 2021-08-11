@@ -1,0 +1,125 @@
+Algunas reglas, a modo orientativo
+----------------------------------
+
+Elección de fuente tipográfica
+-------------------------------
+
+Imagen 01. Familias tipográficas
+
+Una fuente tipográfica es el diseño de un grupo de caracteres, números y signos, regidos por unas características comunes. Algunas son más adecuadas para el cuerpo de texto, otras solo para títulos (textos cortos a buen tamaño) y otras funcionan bien para ambos.
+
+Dejamos una selección de Las 100 mejores fuentes elegidas por tipógrafos, diseñadores, y distintos profesionales del medio.
+
+Puede combinarse distintas familias en un mismo texto (nunca más de 3). Generalmente una serif para el cuerpo de texto una sans para títulos o viceversa, o una distinta para las notas al pie.
+
+En web tenemos una limitación dada por la disponibilidad en los sistemas operativos. Estas son las más usadas:
+
+Arial (la copia de Microsoft de la Helvética)
+Verdana (solo funciona bien para cuerpo de texto)
+Georgia
+Trebuchet MS
+Times New Roman (en mac tenemos Times que es prácticamente la misma fuente)
+Courier New (de las máquinas de escribir, espacio horizontal uniforme, generalmente usada para mostrar código fuente de programación) ver ASCII art
+
+
+En la segunda parte veremos las Web Fonts que vienen a solucionar este problema.
+
+Tamaño
+------
+
+La primer decisión para el diseño con tipografía, implica elegir un tamaño para el cuerpo de texto (en inglés se lo llama body copy). Es el que va a soportar el volumen más grande de texto, y por esto será el principal responsable del menor/mayor grado de legibilidad del texto.
+
+En impresión, se suelen manejar cuerpos de entre 8 y 14pt.
+
+En web lo ideal sería trabajar con pixels, pero IE6 no posibilita escalar texto en pixels (IE7, IE8 tampoco, pero incoporan el full page zooming). La liquidez o escalabilidad es la principal caracterísitca diferencial del texto web vs. el texto impreso. Veremos que la unidad a utilizar por el momento son los ems. Los navegadores por default definieron un tamaño de cuerpo de 16px. En diseño web se parte de 11px y puede llegarse hasta tamaños de 14-16px para el cuerpo de texto (y recomendamos usar estos).
+
+
+Ancho de párrafo
+----------------
+
+En impresión 45 a 75 caracteres para una columna, 66 caracteres (espacios y letras) es el ideal. Para varias columnas, 40 a 50 caracteres.
+
+Entonces, de acuerdo al tamaño elegido para el texto corriente (body copy), definimos un ancho fijo en pixeles. Ejemplo: si usamos un cuerpo de 12px, un ancho de 400px permitirá aproximadamente 66 caracteres.
+
+http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.2/
+
+Hay discusiones al respecto, pero estudios hechos en web hablan de entre 72 y 96 caracteres.
+
+
+Jerarquias con tamaño
+---------------------
+
+Una vez decidido el tamaño del cuerpo de texto, pasamos a elegir el tamaño de títulos y subitulos. Luego de 400 años de desarrollo de tipografía post-gutenberg, se definieron estos cuerpos o tamaños como los más armónicos para usar:
+
+(6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72)
+
+(ver limitación tecnológica de tipos móviles, Imagen 02)
+
+Así, si elegimos un cuerpo 12 para body copy, podemos elegir 14 o 16 para el titulo inmediatamente superior y un 24 o 36 para el título principal. Aquí no hay reglas, elegiremos lo que se adapte mejor a un diseño específico. Incluso, la tecnología moderna permite por ejemplo elegir un 22 o 23 y podrían utilizarse perfectamente, aunque para empezar es mejor limitarse a lo probado durante tantos años.
+
+También a los títulos de 2 y 3er nivel se los puede destacar con otras variantes, dejando el mismo cuerpo del body copy. Ver ejemplo de Bringhurst, página 13 del PDF (italica para 1.2.4 y versalita para 1.3)
+
+También se aplican otras escalas, basadas en números Fibonacci, en Modulor Corbusierano, etc.
+
+
+Interlineado
+------------
+
+El interlineado es el espacio entre la altura de la linea de base de una linea y la linea siguiente. Son números comunes en impresión 9/11, 10/12, 11/13, 12/15 (12pt de tamaño de la fuente y 15pt de interlineado, o sea 3pt después de, por ejemplo la pata de la "p" hasta llegar a la próxima "d").
+
+Está intimamente relacionado con el tamaño de fuente y el ancho de línea (si recorrió un linea larga, el lector deberá reconocer sin problemas la línea siguiente)
+
+En web, a diferencia de en impresión se aplica tanto al espacio inferior como al superior de la línea de texto (por eso se habla de line-height en vez del termino tipográfico "leading"). Por este motivo (y otros propios de la lectura en pantalla), siempre será mejor agregar un poco más de line-height que el que tendremos en un libro. Un número muy usado es el 150% del tamaño de la fuente. Con un body copy de 12px usaremos un line-height de 18px.
+
+
+Interletrado
+------------
+
+Generalmente de aplicaicón para títulos, el espacio entre letras resulta clave cuando manejamos tamaños grandes. Aunque ya de por sí las tipografías vienen para leerse bien a tamaños grandes como 72 o 96pt, tamaños extra grandes, para por ejemplo un cartel de aeropuerto que debe poder leerse a bastante distancia, necesitan de cierto interletrado extra ya que las fuentes están preparadas para leerse a "distancia libro".
+
+
+
+Jerarquías con negritas, itálicas o versalitas
+----------------------------------------------
+
+Las familias tipográficas incluyen variantes del mismo diseño de la fuente. La negrita es la misma fuente resdiseñada con palo más grueso y la itálica una versión inclinada. A veces podemos destacar títulos y subtítulos con el mismo tamaño pero alguna de estas variantes.
+
+La negrita también es utilizada para destacar nombres (por ejemplo diccionarios) y la itálica para escribir en latín e idiomas extranjeros al lenguaje general del texto, hacer un énfasis en determinada oración, etc.
+
+Las versalitas (rediseños de una fuente "todo mayúscula" pero con la altura de una "d") son generalmente usadas para títulos. A efectos tecnológicos implicarían utilizar una fuente nueva, ya que por ejemplo no vienen dentro del set de Arial o Georgia.
+
+
+
+
+*********************************************************************
+
+Buenas lecturas:
+http://www.freddesign.co.uk/2009/12/archive/rules-for-good-typography/
+http://lamb.cc/typograph/
+http://blogs.msdn.com/b/fontblog/archive/2010/06/25/the-art-and-tradition-of-typography.aspx
+http://net.tutsplus.com/tutorials/html-css-techniques/typography-on-the-web/
+
+Sitios con buen manejo tipografico
+http://aiga.org/content.cfm/when-its-cool-to-say-cool
+http://jasonsantamaria.com/articles/css3-for-web-designers/
+http://www.alistapart.com/articles/smartphone-browser-landscape/
+http://ilovetypography.com/2009/06/12/an-interview-with-alice-savoie/
+
+
+Tecnica ems y altura de linea consistente (+ complejo, pero + control)
+http://www.alistapart.com/articles/howtosizetextincss/ 
+
+Consejos de uso de tipografia
+http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography
+
+Sobre tipografia web
+http://webtypography.net/toc/
+
+ALGUNOS USOS DE TIPOGRAFIA DE SISTEMA: http://www.3point7designs.com/blog/2008/06/02/10-examples-of-beautiful-css-typography-and-how-they-did-it/
+
+
+
+Tecnica 76%
+http://www.thenoodleincident.com/tutorials/typography/ 
+
+

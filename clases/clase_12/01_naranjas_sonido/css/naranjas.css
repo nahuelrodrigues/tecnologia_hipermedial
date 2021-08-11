@@ -1,0 +1,19 @@
+body{
+	background-color: #D1F9FF;
+}
+
+
+ul li {
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+ul li a {
+	height: 50px;
+	width: 50px;
+	display: block;
+	text-indent: -9999px;
+	list-style: none;
+	background-color: #6E006E;
+	margin: 0 auto;
+}

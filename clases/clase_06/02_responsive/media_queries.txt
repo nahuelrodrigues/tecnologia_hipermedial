@@ -1,0 +1,147 @@
+
+body {	 background: red; }
+		
+#contenedor{}	
+		
+header .tituloObra{ }
+		
+#navegacion { 	}
+		
+#textoObra{ 
+		
+}
+
+aside{
+
+	
+margin: 1.5em 0;
+padding: 1.5em 0;
+border-top: 1px dotted #666;
+border-bottom: 1px dotted #666;
+background: rgb(38,38,38);
+}
+		
+aside h2, aside h3, aside p, aside ul{	padding: 0 20px 0 20px;	}
+
+footer{ 
+
+		
+margin: 0;
+padding: 30px 0;
+}
+
+
+*****************************************************
+
+
+	@media screen and (max-width: 660px) { /* abordaje "se rompe disenio" */
+		
+		/*body {	 background: yellow; }*/
+		
+		#contenedor{}	
+		
+		header{ margin-bottom: 30px;}
+		
+		header .tituloObra{}
+		
+		header .linkHome{ 	background: #000; }
+		header .linkHome a{ width: 100%; background-position: 5% 18px;}
+		
+		/*#navegacion { display: none;}*/
+		
+		li.home, li.softVNS, li.links{}
+		
+		#contenedor{}
+		
+		#navegacion{ 
+			
+			top: 23px;	
+			right: 3%;
+			width: 220px;
+			margin: 0 auto;
+			border-left: 1px dotted #666;
+			padding-left: 15px;
+		}
+		
+		#navegacion li{ width: 45%; margin-right: 5%; float: left; font-size: 0.8125em;}
+		
+		#navegacion li a{ 
+			background: none;
+			display: inline;
+			border: none; 
+			padding: 0;
+			border-bottom: 1px solid #4A4A4A;
+			}
+		
+		#navegacion li a:hover, #navegacion .activo a{ 
+			background: none; 
+			border: none;
+			color: #FFF;
+			text-shadow: 7px 7px 8px rgba(255, 255, 255, 0.5);
+			border-bottom: 1px solid #DDD;
+			}
+		
+		#textoObra{ 
+			
+			
+			padding-bottom: 30px;
+			border-top: 1px solid #333;
+			padding-top: 25px;
+		}				
+		
+		aside{}
+		
+		footer{ 
+			
+
+			border-top: 1px dotted #666;	
+			padding-top: 15px;
+		}
+	
+	}
+
+*****************************************************
+
+
+
+	@media screen and (max-width: 450px) {
+	
+		header .linkHome{ padding-bottom: 2em;}
+		
+		#navegacion{ 
+			width: 100px; 
+			text-align: right;
+			right: 12px;
+			left: auto;
+			top: 15px;
+			}
+		
+		#navegacion li{ float: none; width: 100%;}
+	
+	}
+	
+	@media screen and (max-width: 420px) {
+		#textoObra p, #textoObra li{ font-size: 1em; }
+	}
+
+
+
+*****************************************************
+
+
+
+	/* Soporte para IE7,8 */
+	
+	#contenedor{
+		width: 960px;
+		margin: 0 0 0 30px;
+	}	
+	
+	@media screen and (max-width: 1140px) {
+		#contenedor{
+			width: 96%;
+			margin: 0 0 0 3%;
+		}	
+	}
+	
+	/* Fin de soporte para IE8 */

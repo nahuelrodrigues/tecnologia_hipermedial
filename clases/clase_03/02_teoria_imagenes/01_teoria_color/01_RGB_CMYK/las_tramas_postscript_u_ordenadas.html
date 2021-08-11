@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><!-- Source is http://gusgsm.com/las_tramas_postscript_u_ordenadas -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Las tramas PostScript u ordenadas | Imagen digital</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="prev" href="/las_tramas_hibridas" />
+
+<link rel="up" href="/tramado_imagen" />
+
+<link rel="next" href="/el_angulo_de_trama_en_las_tramas_postscript" />
+
+    <style type="text/css" media="all">@import "las_tramas_postscript_u_ordenadas_files/9414826fc6ce9eaf4f2c6480b41cb0b9.css";</style>
+    <script type="text/javascript" src="las_tramas_postscript_u_ordenadas_files/jquery.js"></script>
+<script type="text/javascript" src="las_tramas_postscript_u_ordenadas_files/drupal.js"></script>
+<script type="text/javascript">Drupal.extend({ settings: { "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip", "LegacyVersion": 0 }, "googleCSE": { "locale": [ "es" ] } } });</script>
+<script type="text/javascript">window.google_analytics_uacct = "UA-8408906-2";</script>
+<script type="text/javascript">
+	    addthis_pub = 'mi-nombre-de-usuario';
+	    addthis_logo = 'http://www.addthis.com/images/yourlogo.png';
+	    addthis_logo_background = 'EFEFFF';
+	    addthis_logo_color = '666699';
+	    addthis_brand = 'Your Site';
+	    addthis_options = 'favorites, email , gmail, twitter, facebook, netvibes, technorati, meneame, digg, delicious, myspace, google, more';
+	</script>
+    <style type="text/css" media="print">@import "las_tramas_postscript_u_ordenadas_files/print.css";</style>
+    <!--[if lt IE 7]>
+    <style type="text/css" media="all">@import "/sites/default/themes/custom/garlindo/fix-ie.css";</style>
+    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="/" title="Imagen digital"><span>Imagen digital</span></a></h1>        </div>
+
+                  <ul class="links primary-links"><li  class="first menu-1-1-2"><a href="/book" class="menu-1-1-2">Tutoriales y manuales</a></li>
+<li  class="menu-1-2-2"><a href="/blogs/gusgsm" title="Anotaciones sobre programas, personas y hechos relacionados con artes gráficas." class="menu-1-2-2">diario</a></li>
+<li  class="menu-1-3-2"><a href="/links/weblink" title="Enlaces de otros sitios de interés" class="menu-1-3-2">Enlaces</a></li>
+<li  class="menu-1-4-2"><a href="http://www.glosariografico.com/" title="Un pequeño glosario de artes gráficas." class="menu-1-4-2">glosario</a></li>
+<li  class="menu-1-5-2"><a href="/sitemenu" title="El contenido de este sitio estructurado por temas" class="menu-1-5-2">mapa del sitio</a></li>
+<li  class="menu-1-6-2"><a href="/de_que_va_esto" title="Si quieres saber quién ha hecho esto y porque" class="menu-1-6-2">acerca de...</a></li>
+<li  class="last menu-1-7-2"><a href="/contact" title="Por si quieres hablar con el propietario de este sitio." class="menu-1-7-2">contactar</a></li>
+</ul>                
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="/">Inicio</a> › <a href="/preimpresion_basica">Conceptos técnicos básicos en diseño digital para imprenta</a> › <a href="/principios_impresion_color">Principios de la impresión en colores</a> › <a href="/tramado_imagen">Introducción al tramado en imprenta</a></div>                    
+      	<div style="margin:0 auto; text-align: left;" >
+      	<div id="block-adsense_managed-1" class="clear-block block block-adsense_managed">
+
+
+  <div class="content"><div style='text-align:left'><div class='adsense adsense_managed'>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5546040174907428";
+/* 468x60 */
+google_ad_slot = "5154294746";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="las_tramas_postscript_u_ordenadas_files/show_ads.js">
+</script>
+</div></div></div>
+</div>
+	</div>
+      
+          <h2>Las tramas PostScript u ordenadas</h2>          
+          
+                    
+          
+<div id="node-243" class="node">
+
+
+
+  
+  <div class="content">
+    <!-- google_ad_section_start --><p>En las tramas ordenadas, lo que varía es el tamaño del punto de la trama (el "punto de semitono": <em>halftone dot</em> o <em>halftone spot</em>). Su tamaño variable define el porcentaje de la tinta. A mayor tamaño, los puntos ocupan más espacio y el efecto visual es el de que la tinta se oscurece (su porcentaje aumenta). Por eso se dice que su amplitud (la del punto) está modulada (amplitud modulada: AM). Las tramas digitales ordenadas son típicas del lenguaje PostScript y por ello la explicación se centra en ellas.</p>
+
+<table summary="las dos imágenes de ejemplo han sido sometidas a un tramado ordenado como sucede en PostScript." class="tablet0" style="width: 400px;">
+<tr>
+<td><img src="las_tramas_postscript_u_ordenadas_files/bolo01.gif" width="200" height="200" alt="" /></td>
+<td><img src="las_tramas_postscript_u_ordenadas_files/bolo05.gif" width="200" height="200" alt="" /></td>
+</tr>
+<tr>
+<td colspan="2" class="tablet2">Las dos imágenes de modelo sometidas a un tramado PostScript ordenado. El tamaño de los puntos varía (amplitud modulada), no varía la frecuencia y ordenación de su distribución.</td>
+</tr>
+</table>
+<p>Para poder construir un punto de tamaño variable, lo que se hace es agrupar los puntos de impresión en grupos de celdas. </p>
+
+<p>Si queremos construir un punto de trama que sea capaz de representar 256 tonos diferentes de tinta, por ejemplo, necesitamos reunir los puntos de impresión en grupos de 16 × 16 puntos de impresión. A cada uno de esos grupos, le asignaremos un punto de trama, cuyo tamaño variaremos manchando más o menos puntos de impresión (es decir: Casillas).</p>
+<table summary="cuatro ejemplos de cómo llena un punto de semitono el espacio que se le ha reservado." class="tablet0" style="width: 334px;" >
+  <tr>
+    <td colspan="4" class="tablet1" >Estos son cuatro casillas con cuatro puntos de semitono de forma redonda. Observa como ocupa cada uno su cuadrícula de puntos de impresión de 16 × 16.</td>
+  </tr>
+  <tr>
+    <td><img src="las_tramas_postscript_u_ordenadas_files/haf03.gif" width="81" height="81" alt="" /></td>
+    <td><img src="las_tramas_postscript_u_ordenadas_files/haf02.gif" width="81" height="81" alt="" /></td>
+    <td><img src="las_tramas_postscript_u_ordenadas_files/haf01.gif" width="81" height="81" alt="" /></td>
+    <td><img src="las_tramas_postscript_u_ordenadas_files/haf04.gif" width="81" height="81" alt="" /></td>
+  </tr>
+  <tr>
+    <td class="tablet3">Un punto al 0%. ¡No hay nada! pero el espacio está reservado.</td>
+    <td class="tablet2">Un punto al 25%. Se ocupa una cuarta parte del espacio. Forma redonda.</td>
+    <td class="tablet3">Un punto al 75%. Se ocupan tres cuartas partes del espacio.</td>
+    <td class="tablet2">Un punto al 100%. Sólo hay negro.</td>
+  </tr>
+</table>
+<p>Si quieres ahondar un poco más en la formación del punto, te sugiero que leas <a href="http://www.juanval.net/punto_en_filmadora.htm">esta página general</a> (de Juan Val, en español) y esta más concreta sobre la <a href="http://www.cl.cam.ac.uk/~and1000/newsprint/spot-ref.html">función del punto</a> (de Austin Donnelly, en inglés). Aparte, en <a href="http://www.fho-emden.de/~hoffmann/spot290800.pdf">este curioso PDF</a> de Gernot Hoffmann, puedes ver una representación tridimensional de una función de punto.</p>
+<p>Aparte del punto de semitono en si, los elementos básicos en las tramas ordenadas son, la forma del punto, los niveles de gris posibles, el ángulo de la trama, lineatura y (en el caso de más de un color), la roseta.</p><!-- google_ad_section_end --><div class="book-navigation"><ul class="menu"><li class="leaf"><a href="/el_angulo_de_trama_en_las_tramas_postscript">El ángulo de trama en las tramas PostScript</a></li><li class="leaf"><a href="/la_funcion_o_forma_del_punto_en_las_tramas_postscript">La función o forma del punto en las tramas PostScript</a></li><li class="leaf"><a href="/la_lineatura_en_las_tramas_postscript">La lineatura en las tramas PostScript</a></li><li class="leaf"><a href="/la_roseta_en_las_tramas_postscript">La roseta en las tramas PostScript</a></li></ul><div class="page-links clear-block"><a href="/las_tramas_hibridas" class="page-previous" title="Ir a la página anterior">‹ Las tramas híbridas</a><a href="/tramado_imagen" class="page-up" title="Ir a la página padre">arriba</a><a href="/el_angulo_de_trama_en_las_tramas_postscript" class="page-next" title="Ir a la página siguiente">El ángulo de trama en las tramas PostScript ›</a></div></div>  </div>
+
+  <div class="clear-block clear">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li  class="first taxonomy_term_46"><a href="/categoria_postscript" rel="tag" title="" class="taxonomy_term_46">PostScript</a></li>
+<li  class="taxonomy_term_54"><a href="/categoria_impresion" rel="tag" title="" class="taxonomy_term_54">Impresión</a></li>
+<li  class="taxonomy_term_58"><a href="/categoria_preimpresion" rel="tag" title="" class="taxonomy_term_58">Preimpresión</a></li>
+<li  class="taxonomy_term_62"><a href="/categoria_separacion_de_colores" rel="tag" title="" class="taxonomy_term_62">Separación de colores</a></li>
+<li  class="last taxonomy_term_17"><a href="/categoria_gustavo_sanchez_munoz" rel="tag" title="" class="taxonomy_term_17">Gustavo Sánchez Muñoz</a></li>
+</ul></div>
+        </div>
+
+  <div class="links">
+    <ul class="links inline"><li  class="first book_printer"><a href="/book/export/html/243" title="Muestra una versión para impresión de esta página del libro y de sus sub páginas." class="book_printer">Versión para impresión</a></li>
+<li  class="comment_add"><a href="/comment/reply/243#comment-form" title="Comparta sus pensamientos y sus opciones sobre este envío." class="comment_add">Añadir nuevo comentario</a></li>
+<li  class="last addthis"><span class="addthis">
+    <div class="addthis"><a href="http://www.addthis.com/bookmark.php"
+      onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')"
+      onmouseout="addthis_close()"
+      onclick="return addthis_sendto()"><img src="las_tramas_postscript_u_ordenadas_files/button1-share.png" width="125" height="16" alt="Acceder al servicio de marcado social AddThis." /></a></div>
+    <script type="text/javascript" src="las_tramas_postscript_u_ordenadas_files/addthis_widget.js"></script>
+    </span></li>
+</ul>
+    <br />
+      <!-- AddThis Bookmark Button BEGIN -->
+      <script type="text/javascript">
+        addthis_url    = location.href;
+        addthis_title  = document.title;
+        addthis_pub    = 'write-your-addthis-user-name-here';
+      </script>
+      <script type="text/javascript" src="las_tramas_postscript_u_ordenadas_files/addthis_widget.php" ></script>
+      <!-- AddThis Bookmark Button END -->
+<br />
+
+    
+  </div><br />
+  </div>
+
+</div>
+
+
+<div id="comments"></div>
+      	<div style="margin:0 auto; text-align: left;" >
+      	<div id="block-adsense_managed-2" class="clear-block block block-adsense_managed">
+
+
+  <div class="content"><div style='text-align:center'><div class='adsense adsense_managed'>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5546040174907428";
+/* 468x15 */
+google_ad_slot = "3758554653";
+google_ad_width = 468;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="las_tramas_postscript_u_ordenadas_files/show_ads.js">
+</script>
+</div></div></div>
+</div>
+	</div>
+      
+          <span class="clear"></span>
+                    <div id="footer">
+<div id="block-block-8" class="clear-block block block-block">
+
+
+  <div class="content"><table style="text-align: left; vertical-align: top; border: 1px solid #cccccc; background-color: #ffffff;">
+
+<tr tyle="border: 0px;">
+<th colspan="3" style="background-color: #cc6666; color: #ffffff;" ><strong>Artículos destacados</strong></th>
+</tr>
+
+<tr tyle="border: 0px;">
+<td style="border-right: 1px #cccccc dashed; vertical-align: top; padding: 10px;">
+<img src="las_tramas_postscript_u_ordenadas_files/iccprofileicon.png" height="50px" />
+<ul>
+<li><a href="/color_faq">Preguntas y respuestas sobre el color</li>
+<li><a href="/aparatos_existen_medir_color">Qué aparatos existen para medir el color</li>
+<li><a href="/colorimetria">Introducción a la colorimetría</a></li>
+<li><a href="/notas_creacion_uso_perfiles_monitor_impresora">Cómo crear perfiles para impresoras y monitores</li>
+</ul>
+</td>
+<td style="border-right: 1px #cccccc dashed; vertical-align: top; padding: 10px; ">
+<img src="las_tramas_postscript_u_ordenadas_files/pdfequis.gif" height="50px" />
+<ul>
+<li><a href="/colorear_dibujos_illustrator">Colorear cómics en Adobe Illustrator<br /></li>
+<li><a href="/tutoriales_illustrator">Tutoriales de Adobe Illustrator</li>
+<li><a href="/trazados_recorte">las siluetas con trazados de recorte en Photoshop</li>
+<li><a href="/mascaras_recorte_photoshop">Siluetear con máscaras de capa en Photoshop</li>
+</td>
+
+<td style="vertical-align: top; padding: 10px; ">
+<img src="las_tramas_postscript_u_ordenadas_files/idcs3_iconb.jpg" height="50px" />
+<ul>
+<li><a href="/pequenos_detalles_para_aumentar_la_productividad_con_indesign">Tutoriales de InDesign</li>
+<li><a href="/modificar_documentos_pdf">Cómo modificar PDFs</li>
+<li><a href="preguntas_y_respuestas_faq_sobre_pdfx">Qué es y para qué sirve el PDF/X</li>
+</ul>
+</td>
+</tr>
+
+</table></div>
+</div>
+<div id="block-copyright-site" class="clear-block block block-copyright">
+
+
+  <div class="content">&copy; Gusgsm; 2010<br /></div>
+</div>
+</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-google_cse-0" class="clear-block block block-google_cse">
+
+
+  <div class="content"><form action="/search/google"  accept-charset="UTF-8" method="get" id="google-cse-searchbox-form">
+<div><input type="hidden" name="cx" id="edit-cx" value="013676989997203748922:pzmskqvou6g"  />
+<input type="hidden" name="cof" id="edit-cof" value="FORID:11"  />
+<div class="form-item" id="edit-query-wrapper">
+ <input type="text" maxlength="128" name="query" id="edit-query"  size="15" value="" title="Introduzca los términos que quiera buscar." class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-sa" value="Buscar"  class="form-submit" />
+<input type="hidden" name="hl" id="edit-hl" value="es"  />
+<input type="hidden" name="ie" id="edit-ie" value="utf8"  />
+<input type="hidden" name="form_id" id="edit-google-cse-searchbox-form" value="google_cse_searchbox_form"  />
+
+</div></form>
+</div>
+</div>
+<div id="block-block-1" class="clear-block block block-block">
+
+
+  <div class="content"><div style="height: 260px; width: 120px; background-color: #ffffff; padding: 2px;">
+<a title="Imprenta offset online | ImprimaOnline" href="http://www.imprimaonline.com" target="_blank"><img style="border: 0px;" src="las_tramas_postscript_u_ordenadas_files/banner_gusgsm.gif" alt="" height="120px" width="120px" /></a><br />
+
+<div style="text-align: center">
+<a style="font-family: Arial, sans-serif; font-size: 100%;" href="http://www.imprimaonline.com" target="_blank">Imprimir Online</a><br /><br />
+<a style="font-family: Arial, sans-serif; font-size: 100%;" href="http://www.imprentaonline.eu" target="_blank">Imprenta Online</a><br /><br />
+<a style="font-family: Arial, sans-serif; font-size: 100%;" href="http://www.impresionoffset.net" target="_blank">Impresion Offset</a><br />
+</div>
+</div></div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="/aggregator" title="Artículos publicados en otros sitios recomendados">Noticias ajenas</a></li>
+
+</ul>
+</div>
+</div>
+<div id="block-book-0" class="clear-block block block-book">
+
+  <h2>Conceptos técnicos básicos en diseño digital para imprenta</h2>
+
+  <div class="content"><ul class="menu"><li class="collapsed"><a href="/algunos_problemas_en_impresion">Algunos problemas en impresión</a></li><li class="leaf"><a href="/bibliografia_y_enlaces">Bibliografía y enlaces</a></li><li class="collapsed"><a href="/preparar_ficheros">Cómo enviar los ficheros a la imprenta</a></li><li class="expanded"><a href="/principios_impresion_color">Principios de la impresión en colores</a><ul class="menu"><li class="expanded"><a href="/tramado_imagen">Introducción al tramado en imprenta</a><ul class="menu"><li class="leaf"><a href="/la_tecnica_tradicional_de_tramado_de_imagenes">La técnica tradicional de tramado de imágenes</a></li><li class="leaf"><a href="/las_tramas_estocasticas">Las tramas estocásticas</a></li><li class="leaf"><a href="/las_tramas_hibridas">Las tramas híbridas</a></li><li class="expanded"><a href="/las_tramas_postscript_u_ordenadas" class="active">Las tramas PostScript u ordenadas</a><ul class="menu"><li class="leaf"><a href="/el_angulo_de_trama_en_las_tramas_postscript">El ángulo de trama en las tramas PostScript</a></li><li class="leaf"><a href="/la_funcion_o_forma_del_punto_en_las_tramas_postscript">La función o forma del punto en las tramas PostScript</a></li><li class="leaf"><a href="/la_lineatura_en_las_tramas_postscript">La lineatura en las tramas PostScript</a></li><li class="leaf"><a href="/la_roseta_en_las_tramas_postscript">La roseta en las tramas PostScript</a></li></ul></li></ul></li></ul></li><li class="leaf"><a href="/que_es_el_lenguaje_postscript">Qué es el lenguaje PostScript</a></li><li class="collapsed"><a href="/tamanos_de_papel">Tamaños de papel</a></li><li class="collapsed"><a href="/elementos_diseno">Tipos de elementos básicos en diseño gráfico: Imágenes, textos...</a></li></ul></div>
+</div>
+<div id="block-block-2" class="clear-block block block-block">
+
+
+  <div class="content"><p><a href="/rss.xml"><img src="las_tramas_postscript_u_ordenadas_files/rss.gif" width="36px" height="14px" alt="xml rss feed" /></a></p>
+
+<p>
+<a href="http://drupal.org/"><img src="las_tramas_postscript_u_ordenadas_files/druzpal.png" width="80px" height="15px" alt="Sitio gestionado con Drupal" /></a>
+</p>
+
+<p>
+<a href="http://www.minervahosting.com/clientes/aff.php?aff=037">
+<img src="las_tramas_postscript_u_ordenadas_files/minerva.gif" width="80px" height="15px" alt="Sitio alojado en Minerva Hosting SLU." /></a>
+</p></div>
+</div>
+<div id="block-adsense_oldcode-0" class="clear-block block block-adsense_oldcode">
+
+
+  <div class="content"><div class='adsense adsense_oldcode'>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5546040174907428";
+google_ad_width = 120;
+google_ad_height = 240;
+google_ad_format = "120x240_as";
+google_ad_type = "text_image";
+google_ad_channel = "7214786047";
+google_color_border = "F7259C";
+google_color_bg = "666666";
+google_color_link = "E5FF0A";
+google_color_text = "FFFFFF";
+google_color_url = "E5FF0A";
+google_ui_features = "rc:0";
+//--></script>
+<script type="text/javascript"
+  src="las_tramas_postscript_u_ordenadas_files/show_ads.js">
+</script>
+</div></div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+  <script type="text/javascript" src="las_tramas_postscript_u_ordenadas_files/ga.js"></script>
+<script type="text/javascript" src="las_tramas_postscript_u_ordenadas_files/googleanalytics.js"></script>
+<script type="text/javascript" src="las_tramas_postscript_u_ordenadas_files/google_cse.js"></script>
+<script type="text/javascript">try{var pageTracker = _gat._getTracker("UA-8408906-2");pageTracker._trackPageview();} catch(err) {}</script>
+  </body>
+</html>

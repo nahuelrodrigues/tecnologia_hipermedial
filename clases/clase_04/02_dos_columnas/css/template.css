@@ -1,0 +1,110 @@
+/*********** TAGS COMUNES *************/
+body{
+	background-color:#000;
+	color: #000;
+	font: 100%/1.125 Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+p{
+	font-size: 0.75em;
+	line-height: 1.51;
+}
+
+small{
+	font-size: 0.6875em;
+}
+
+/*********** LAYOUT GENERAL *************/
+
+#contenedor{
+	width: 760px;
+	margin: 0 auto ;
+	padding: 0;
+	position: relative;
+	background-color: #FFF;
+
+}
+
+#explicacionObra{
+
+	background-color: #E60000;
+	padding-bottom: 40px;
+		width: 475px;
+	float:left;
+
+
+}
+
+
+#imagenObra{
+width: 255px;
+	/*padding-top: 180px;*/
+	padding-top: 17em;
+	float: right;
+}
+
+footer{
+
+	padding: 20px 20px 40px 20px;
+	text-align: center;
+	background-color: #000;
+	color: #FFFFFF;
+	clear: both;
+}
+
+
+/* Estilos del texto para Explicacion de la Obra */
+
+
+#explicacionObra h1{
+	color: #FFF;
+	font: normal 2.25em/1.01em Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 40px;
+	margin-left: 25px;
+	margin-right: 20px;
+}
+
+#explicacionObra h2{
+	color: #FFF;
+	font: normal 1.125em/1em Georgia, "Times New Roman", Times, serif;
+	margin-left: 25px;
+	margin-bottom: 25px;	
+}
+
+#explicacionObra p{
+	margin-left: 25px;
+	margin-bottom: 25px;
+	margin-right: 50px;
+}
+
+#explicacionObra p#nombrePortfolio{
+	padding-top: 40px;
+	font-weight: bold;
+	margin-left: 28px;
+	margin-bottom: 15px;
+	margin-right: 50px;
+}
+
+/* Estilos del texto para Imagen lateral */
+
+
+#imagenObra img{
+	margin-bottom: 15px;
+
+}
+
+#imagenObra p{
+	font-size: 0.6875em;
+	margin-right: 40px;
+}
+
+#imagenObra p b, #imagenObra p cite{
+	font-weight: bold;
+}
+
+#imagenObra p.numCatalogo{
+	color:#FF0000;
+	
+}
+

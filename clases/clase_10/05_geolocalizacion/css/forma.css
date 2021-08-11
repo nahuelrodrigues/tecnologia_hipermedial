@@ -1,0 +1,15 @@
+
+body {
+	font: normal 100%/1.125  "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+}
+
+#ubicacion {
+	width:800px;
+	height:500px;
+	margin:50px 20px 20px 20px;
+	border:1px solid #CCC;
+}
+
+p {
+	margin:0 20px;
+}

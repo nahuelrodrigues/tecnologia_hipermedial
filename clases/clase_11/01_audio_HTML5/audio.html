@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+<head>
+<meta charset="utf-8">
+<title>Audio Accesible HTML5 / Flash</title>
+<script src="js/libs/modernizr-1.7.min.js"></script>
+<link rel="stylesheet" href="css/audio.css" media="all" />
+<script src="js/libs/jquery-1.5.2.min.js"></script>
+<script src="js/funciones.js"></script>
+</head>
+<body>
+<article>
+  <h1>Audio en HTML5</h1>
+  <p>On Wednesday, I gave a talk at Google about WebVTT, the Web Video Text Track file format that is under development at the WHATWG for solving time-aligned text challenges for video.</p>
+  <p>I started <a href="audio/una_cheno_34_punaladas.mp3" class="reproducir">by explaining all the features that WebVTT</a> supports for captions and subtitles, mentioned how WebVTT would be used for text audio descriptions and navigation/chapters, and explained how it is included into HTML5 markup, such that the browser provides some default rendering for these purposes. I also mentioned the metadata approach that allows any timed content to be included into cues.</p>
+    
+<audio id="unaCheno" controls="controls" >
+	<source scr="audio/una_cheno_34_punaladas.mp3" type="audio/mp3">
+			<source scr="audio/una_cheno_34_punaladas.ogg" type="audio/ogg">
+
+<object type="application/x-shockwave-flash" width="300" height="24" data="jwplayer/player.swf?file=audio/una_cheno_34_punaladas.mp3" id="audioIE">
+      <param name="movie" value="jwplayer/player.swf?file=audio/una_cheno_34_punaladas.mp3">
+      <param name="allowfullscreen" value="true" />
+      <param name="allowscriptaccess" value="always" />
+      <a href="audio/una_cheno_34_punaladas.mp3">Bajar el audio "Una cheno" de Julián Centeya por 34 puñaladas.</a>
+    </object> -->
+
+  
+</article>
+</body>
+</html>

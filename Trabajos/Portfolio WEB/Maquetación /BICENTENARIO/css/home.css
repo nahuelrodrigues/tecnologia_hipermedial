@@ -1,0 +1,298 @@
+body{
+	background-color: white
+	font: normal 100%/1.125 verdana; 
+}
+/*** INTENTO DE INSERTAR LA TIPOGRAFÍA 
+@font-face{
+   font-family:"DIN";
+   src: url("fonts/DINL____.TTF");
+   [font-weight:<normal>];
+   [font-style:<normal>];
+} 
+***/
+a { color: #42abce;
+
+}
+
+/*********** HEADER *************/
+
+
+header {
+	width: 752px;
+	height: 88px;
+	margin: 0px auto 0 auto;
+	
+	border-bottom: 1px dashed #42abce;
+}
+
+.fotomujeres {
+	width: 752px;
+	margin: 0 auto 0 auto;
+	
+}
+
+.buscador {
+	float:right;
+	padding-top: 60px;
+
+}
+
+#fieldset {
+	
+	width: 200px;
+	left:265px;
+	height: 23px;
+	margin-left: 580px;
+	padding-top: 50px;
+	
+	;
+	
+}
+.logo{float:left;}
+
+.button {cursor: pointer;
+	margin-right: 26px;
+float:right;
+top:65px;}
+
+ #texto{
+float:left;
+ 	padding-bottom: 3px;
+	width: 144px;
+	height: 15px;
+
+}
+#buscar {cursor:pointer;
+	margin-left: 10px;
+
+
+}
+
+/**** INTENTO FALLIDO DE CAMBIAR EL BOTON "SUBMIT" A IMAGEN BOTONBUSCAR.PNG 
+input #buscar [type=submit] {
+    background-image: url(../img/botonbuscar.png); 
+    width:23px;
+    height: 21px;
+    border: none;
+    display: block;
+    padding: 0px;
+    margin-left: 120px;
+   float:right;
+  
+}****/
+
+
+/*********** MENÚ *************/
+
+#navegacion {width: 752px;
+	margin: 23px auto 0 auto;
+
+}
+#Contenedor nav ul li{	
+float:left;
+		}
+
+		#Contenedor nav ul li a{
+			font-family: "DIN";
+			margin-top: 5px;
+			display: block;
+			width: 140px;
+			border: none;
+			padding: 14px 0 14px 0;
+			text-align: center;
+			text-decoration: none;
+			font-size: 0.875em;
+			background-image: ;
+			color: #969696;
+}
+	#Contenedor nav ul  .casa {
+		width:149px;
+			border-top: 2px solid #42abce;}
+	#Contenedor nav ul  .exposiciones {
+		width: 158px;
+			border-top: 2px solid #ff0000;}		
+	#Contenedor nav ul  .actividades {
+		width: 143px;
+			border-top: 2px solid #4ab500;}
+	#Contenedor nav ul li .noticias { 
+		width: 148px;
+		
+			border-top: 2px solid #e67d02;
+			width: 152px; }
+	#Contenedor nav ul  .educacion {
+		
+			width: 150px;
+			border-top: 2px solid #e4ce3e;}
+
+
+#Contenedor a:hover {
+	color: #FFF;
+	background-color: #747474;
+}
+
+
+/*********** DIV CONTENEDOR *************/
+
+
+#Contenedor{width: 752px;
+		margin: 23px auto 0 auto;
+
+}
+/*********** DIV TEXTOOBRA *******584******/
+#textoObra{ 
+width: 580px;
+height: 540px;
+
+float:right;
+margin-top: 13px;
+padding-top: 14px;
+border-bottom: 1px dashed #42abce;
+border-top: 3px solid #42abce;
+
+}
+/*********** DIV TEXTOOBRA / texto *************/
+p {
+font-family: verdana;
+	font-size:0.75em;
+	line-height: 16px;
+}
+
+h2 {font-size:0.75em;
+	color: #42abce ;
+font-weight: bold;
+font-family: verdana
+}
+
+#titulo2 {padding-top: 21px;
+
+}
+
+h3 {
+padding-top: 10px;
+font-family: verdana;
+ color: #42abce ;
+	font-size: 0.6875em;
+}
+
+/*********** DIV TEXTOOBRA/ img *************/
+article .img1 {
+	clear:left;
+	float: left;
+	margin-bottom: 35px;
+	margin-top: 5px;
+	margin-right: 36px;
+
+	
+}
+article .img2 {
+	clear:left;
+	float:left;
+margin-bottom: 35px;
+margin-right: 36px;	
+
+}
+article .img3 {
+	clear:left;
+	float:left;
+	margin-bottom: 42px;
+	margin-right: 36px;
+	
+	
+	
+}
+article .img4 {
+	clear:left;
+	float:left;
+	margin-right: 36px;
+	margin-bottom: 35px;
+	
+}
+
+#contenedor1 {
+
+border-bottom: 1px dashed #42abce;
+height: 90px;
+
+
+}
+
+#contenedor2 {
+
+padding-bottom: 10px;
+border-bottom: 1px dashed #42abce;
+height: 80px;
+}
+
+#contenedor3 {
+
+padding-bottom: 20px;
+border-bottom: 1px dashed #42abce;
+height: 75px;
+}
+
+#contenedor4 {
+	padding-bottom: 10px;
+height: 87px;
+}
+
+/*********** ASIDE *************/
+
+aside{
+	float:left;
+	padding-right: 11px;
+	border-right: 1px dashed #42abce;
+}
+#ban {float:left;}
+
+#banners{
+	width: 143px;
+	height: 542px;
+	padding-top: 13px;
+	float: left;}
+
+.banner1{	padding-bottom: 10px;
+}
+.banner2{	padding-bottom: 0px;
+}
+.banner3{
+	padding-left: 40px;
+	padding-top: 13px;
+	padding-bottom: 23px;
+}
+.banner4{	padding-bottom: 13px;
+}
+
+/*********** FOOTER *************/
+
+footer{ 
+	width: 752px;
+	margin: 0 auto;
+	line-height: 15px;
+	font-size: 0.6875em;
+	font-family: Arial;
+
+	}
+#pie{
+	width:752px;
+	height: 65px;
+	padding-top:10px ;
+	float: left;
+	clear:both;
+	border-top: 1px dashed #42abce;
+	margin-top: 56px;
+	margin-bottom: 40px;
+	padding-left: 10px;
+}
+
+.footer1{margin-top: -72px;
+	padding-right: 220px;
+	padding-top: 5px;
+	margin-left: -100px;
+	float:right;
+
+}
+.footer2{float:right;
+	margin-top: -57px;
+	margin-left: 100px;
+	margin-right: 10px;
+}

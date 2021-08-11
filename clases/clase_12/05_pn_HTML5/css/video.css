@@ -1,0 +1,35 @@
+body{
+	color: #000;
+	font: normal 100%/1.125  "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+}
+
+p, li, td, th{
+  font-size:0.875em;
+  line-height: 1.41;
+}
+
+#fondo{
+	background: #000;
+	width:640px;
+	height:470px;
+	float: left;
+}
+
+video, object{
+}
+
+object{ background: #000;}
+
+/* codigo para display */
+
+.displayArray{
+	font-family: Courier, "Courier New", monospace;
+	float: right;
+	width: 300px;
+	border: 1px solid green;
+	color: green;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.displayArray .mix{ color: #000; margin-bottom: 20px;}

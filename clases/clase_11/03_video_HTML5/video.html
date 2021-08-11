@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+<head>
+<meta charset="utf-8">
+<title>Video en HTML5 / Flash</title>
+<script src="js/libs/modernizr-1.7.min.js"></script>
+<link rel="stylesheet" href="css/video.css" media="all" />
+<script src="js/libs/jquery-1.5.2.min.js"></script>
+<script src="js/funciones.js"></script>
+</head>
+<body>
+<article>
+  <h1>Video en HTML5</h1>
+  <p>On Wednesday, I gave a talk at Google about WebVTT, the Web Video Text Track file format that is under development at the WHATWG for solving time-aligned text challenges for video.</p>
+  <p>I started <a href="#reproducirVideoEn-0h3m17s200l" class="reproducirEn">el uso de amplias superficies pintadas que se van abriendo y cerrando con el correr de la cinta fílmica</a> supports for captions and subtitles, mentioned how WebVTT would be used for text audio descriptions and navigation/chapters, and explained how it is included into HTML5 markup, such that the browser provides some default rendering for these purposes. I also mentioned the metadata approach that allows any timed content to be included into cues.</p>
+  <!--autoplay="autoplay" preload="preload" poster="placeholder.jpg" -->
+
+<video id="lenLye" width="384" height="288" >
+  <source src="video/len_lye_swinging_the_lambeth_walk.mp4" type="video/mp4"/>
+    <source src="video/len_lye_swinging_the_lambeth_walk.webm" type="video/webm"/>
+  </video>
+
+
+
+
+  
+  <aside>
+  <form action="#" >
+        <fieldset>
+            <label for="texto">Buscar:</label>
+            <input name="texto" type="text" id="texto" />
+            <input type="submit" value="Buscar" id="buscar">
+        </fieldset>
+    </form>
+  </aside>
+</article>
+</body>
+</html>

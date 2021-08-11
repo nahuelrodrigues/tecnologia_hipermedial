@@ -1,0 +1,196 @@
+/* INSPIRACION DISENIO = http://www.rikcat.com/ */
+
+body{
+	color: #C3C3C3;
+	font: normal 100%/1.125  "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+	background-color: #1E1E1E;
+}
+
+
+
+/*  RICHARD RUTTER technique
+
+h1 --> font-size:2.25em;   16x2.25=36 
+h2 --> font-size:1.5em;    16x1.5=24 
+h3 --> font-size:1.125em;  16x1.125=18  
+h4 --> font-size:0.875em;  16x0.875=14 
+p  --> font-size:0.75em;   16x0.75=12 */ 
+
+p, li, td, th, footer{
+  font-size:0.875em;
+  line-height: 1.41;
+}
+
+/* ---------------- 
+				LAYOUT
+------------------ */
+
+#contenedor{
+	width: 880px;
+	margin: 63px 0 0 30px; 
+	position: relative; /* Soluciona algunos bugs de refrescado ante scroll */
+	}	
+	
+header{ width: 602px; margin-bottom: 43px;}
+
+#navegacion {
+	width: 182px;
+	float: left;
+}
+
+#textoObra{ 
+	float: left;
+	width: 371px;
+	margin-left: 44px;
+}
+
+aside{
+	float: right;
+	width: 205px;
+	/*margin-right: 20px; EJEMPLO para mostrar el Doubled margin float bug de IE6 */
+	/*display: inline; */
+}
+
+footer{ 
+	clear: both;
+	width: 430px;
+	margin: 0 auto;
+	padding: 30px 0;
+	color: #444;
+	}
+	
+
+/* ---------------- 
+		ENCABEZADO
+------------------ */
+
+	
+	header h1, header .tipologia{ 
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 2.6em;
+		line-height: 1;
+		color: #FFF;
+		margin-bottom: 13px;
+	}
+	
+		header .tipologia{ 
+			color: #0099CC;
+			margin-bottom: 11px;
+			font-size: 1.3em;
+			font-style: normal;
+			margin-left: 2px;
+		}
+			
+		header p{
+			font: italic 1.0625em/1.51 Georgia, "Times New Roman", Times, serif;
+			
+		}
+		
+/* -------------------------------- 
+		 NAVEGACION OBRA (1ra columna)
+----------------------------------- */
+
+	#navegacion li { 
+		margin-bottom: 2px; /* Evitamos el WhiteSpace bug en IE6 */
+		}
+
+		#navegacion a {
+			display:block;
+			width: 170px;
+			background-color: #323232;
+			border-bottom:1px solid #3E3E3E;
+			border-right:1px solid #3E3E3E;
+			color:#C3C3C3;		
+			text-decoration: none;
+			font-weight: bold;
+			padding: 6px 0 6px 12px; /* IE5.5- mostrara menu 12px mas corto */
+			}
+			
+		#navegacion a:hover,  #navegacion a.activo{
+			background-color: #0099CC;
+			color: #FFF;
+			}
+
+
+/* ------------------------------ 
+			TEXTO OBRA (2da columna)
+--------------------------------- */
+
+
+		#textoObra p{ margin-bottom: 1.5em;}
+		
+		#textoObra img{ border: 3px solid #A6CA3F; margin-bottom: 10px;}
+		
+		#textoObra p b{ color: #A6CA3F}
+			
+		#textoObra	.epigrafe{ 
+			font-size: 0.75em;
+			margin-bottom: 25px;
+			margin-left: 3px;
+			}
+		
+		#textoObra a, aside a {
+			color: #A6CA3F;
+			text-decoration: none;
+			border-bottom: 1px solid #62742F;
+			}
+		
+		#textoObra a:hover, aside a:hover { color: #0099CC; border-bottom: 1px solid #0F5C75;}
+
+		/* TABLE */
+		
+		#horCebra{
+			margin: 0 0 1.5em 0;
+			width: 100%;
+			text-align: left;
+			border-collapse: collapse;
+		}
+		
+		#horCebra th{
+			font-weight: bold;
+			padding: 5px 8px;
+			color: #A6CA3F;
+			border-top: 1px solid #0099CC;
+			border-bottom: 1px solid #0099CC;
+		}
+		
+		#horCebra td{
+			padding: 6px 8px;
+		}
+		
+		/************ EJERCICIO JAVASCRIPT  **************/
+		
+		.cebra {
+			background-color: #1B2B30;
+			color: #FFF;
+		}
+		
+		.cebra2 {
+			background-color: #183741;
+			border-bottom: 1px solid #0E5E79;
+		}
+
+		/************ /EJERCICIO JAVASCRIPT  **************/
+
+/* ------------------------------- 
+			CRONOLOGIA (3ra columna)
+--------------------------------- */
+
+	aside h1{ 
+		font-size: 0.9375em;
+		font-weight: bold;
+		color: #0099CC;
+		margin-bottom: 10px;
+	}
+	
+	aside h2{ 
+        font-size:0.75em;
+		font-weight: bold;
+		color: #FFF;
+		margin-top: 12px;
+		} 
+		
+		aside p{
+		 font-size:0.75em;
+		}

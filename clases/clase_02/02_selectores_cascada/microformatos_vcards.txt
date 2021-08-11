@@ -1,0 +1,30 @@
+hCard - http://microformats.org
+
+
+<div id="contact">
+  <h2>Contact Me</h2>
+  <p>You can contact me via email to 
+   <a href="mailto:jane@example.com">jane@example.com</a>, 
+   or send stuff to me at the following address:</p>
+  <p>255 Some Street,<br />
+     Some Place,<br />
+     Some Town</p>
+</div>
+
+
+
+--------------------------
+
+
+<div id="contact" class="vcard">
+   <h2>Contact Me</h2>
+   <h3 class="fn">Jane Doe</h3>
+   <p>You can contact me via email to 
+    <a class="email" href="mailto:jane@example.com">jane@example.com</a>, 
+    or reach me at the following address:</p>
+   <div class="adr">
+     <div class="street-address">255 Some Street</div>
+     <div class="locality">Some Town</div>
+     <div class="region">Some Place</div>
+   </div>
+</div>

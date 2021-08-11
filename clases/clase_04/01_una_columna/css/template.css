@@ -1,0 +1,35 @@
+/*********** TAGS COMUNES *************/
+body{
+	background-color:#000;
+	color: #FFF;
+	font: 100%/1.125 Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/*********** LAYOUT GENERAL *************/
+
+#contenedor{
+	margin: 0 0 0 160px;
+	width: 520px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: relative;	
+}
+
+#contenedor h1{
+	color: #FF0000;
+	font: normal 2.25em/1.125 Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 40px;
+}
+
+#contenedor img{
+	margin-right: 25px 
+
+}
+
+#contenedor p{
+	font-size: 0.6875em;
+	line-height: 1.51;
+	margin-top: 40px;	
+}
+

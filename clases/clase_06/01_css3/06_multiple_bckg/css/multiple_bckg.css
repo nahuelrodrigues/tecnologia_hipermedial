@@ -1,0 +1,25 @@
+/* FUENTE DISEÑO: http://www.designspongeonline.com/ */
+
+/*********** TAGS COMUNES *************/
+body{
+	color: #333;
+	font: normal 100%/1.125 Arial, Helvetica, sans-serif;
+}
+
+/*********** LAYOUT GENERAL *************/
+
+#contenedor{
+width: 800px;
+height: 628px;
+
+
+background: 
+url(../img/moholy_6.png) no-repeat bottom right,
+url(../img/moholy_5.png) no-repeat 300px 50px,
+url(../img/moholy_4.png) no-repeat 200px 54px,
+url(../img/moholy_3.png) no-repeat 187px 0,
+url(../img/moholy_2.png) no-repeat top right,
+url(../img/moholy_1.png) no-repeat bottom left;
+background-color: #050511;
+}
+

@@ -1,0 +1,55 @@
+
+
+body{
+	color: #000;
+	font: normal 100%/1.125  "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+}
+
+p, li, td, th{
+  font-size:0.875em;
+  line-height: 1.41;
+}
+
+
+.controles{
+	list-style: none;
+	overflow: hidden;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+.controles li{
+	float: left;
+	margin-right: 10px;
+}
+
+.controles li a{
+	
+}
+
+.controles .detener{
+	text-indent: -9999px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/bot_stop.png) no-repeat 0 0;
+}
+
+
+.controles .detener:hover{
+	background-image: url(../img/bot_stop_ov.png);
+}
+
+.versionSoloTexto{
+	width: 260px;
+	padding: 0 20px 15px 20px;
+	margin: 0 0 20px 0;
+	clear: both;
+	background: #E3F7FF;
+	border: 2px solid #0099FF;
+}
+
+audio, object{
+	clear: both;
+}
+

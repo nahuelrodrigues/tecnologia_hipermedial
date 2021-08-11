@@ -1,0 +1,9 @@
+Canvas
+http://paperjs.org/examples/chain/
+http://calebevans.me/projects/jcanvas/
+
+Ejemplos con CANVAS
+http://nagpurcolors.com/html-5-effects-that-can-blow-your-mind/
+
+Twitter and canvas
+http://hakim.se/experiments/html5/wave/03/

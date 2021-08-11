@@ -1,0 +1,33 @@
+body{
+	background-color: #D1F9FF;
+}
+
+
+ul li {
+	height: 10px;
+	width: 10px;
+	float: left;
+	text-indent: -9999px;
+	background-color: #6E006E;
+}
+
+ul li.absolute{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-indent: -9999px;
+	background-color: #6E006E;
+	cursor: pointer;
+}
+
+form{
+ position: absolute;
+ bottom: 20px;
+ right: 40px;
+}
+
+#tamanio{
+ width: 40px;
+}

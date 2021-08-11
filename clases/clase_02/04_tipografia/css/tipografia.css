@@ -1,0 +1,105 @@
+/* INSPIRACION DISENIO: http://www.aiga.org/ */
+body{
+  background-color: #F0F0F0;
+	color: #333;
+font: normal 100%/1.125 Arial; Helvetica, sans-serif;
+	/* definiendo el font-size en 100% decimos que nuestra base  
+	son 16px para tutti browsers. Si el usuario tiene la tipografía 
+	agrandada, se va a agrandar la base del body y todo lo que se herede. */
+	/* line-height:1.125; /* 16×1.125=18 Aquí definimos un interlineado de 18 pixels base. Sería 
+	16/18. Para los párrafos va a ser poco, pero después lo corregimos*/
+	padding: 16px;
+
+}
+
+/* Técnica RICHARD RUTTER
+http://www.alistapart.com/articles/howtosizetextincss/
+Tamaños propuestos por él:
+h1 --> font-size:2.25em;   16x2.25=36px
+h2 --> font-size:1.5em;    16x1.5=24px
+h3 --> font-size:1.125em;  16x1.125=18px
+h4 --> font-size:0.875em;  16x0.875=14px
+p  --> font-size:0.75em;   16x0.75=12px
+*/
+
+article{
+	background-color: #F9F9F9;
+	width: 460px;
+	padding: 0 20px;
+}
+
+p{	
+	font-size: 0.875em;
+	line-height: 1,5em;
+	padding: 0 0 0em 0;
+
+	text-align: left;
+}
+
+h1{
+  /* Esto es solo para el ejercicio, si cambiamos varios items es mejor el shorthand */
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.5em;   /*16x1.5=24px; */
+	font-weight: normal;
+	
+	color: #CC3300;
+	padding: 0 0 15px 0;
+	border-bottom: 1px solid #CCC;
+}
+
+h2{
+	color: #CC3300;
+	font-size: 1.125em; /*18/16*la cuenta */
+	line-height: 1.5;
+	padding: 1em 0 0.5em 0;
+
+
+}
+
+#autor {
+	font-size: 0.875em;
+	font-weight: bold; 
+	background-color: #E3E3E3;
+	color: #666;
+	padding: 9px 0 10px 20px;
+	margin-bottom: 15px;
+	margin-right: -20px;
+	margin-left: -20px;
+		
+	/*font-size: 0.875em;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;*/
+}
+
+#autor a{
+	text-decoration: none;
+	border-bottom: 1px solid #ECF0F6;
+	color: #666;		
+text-transform: uppercase;
+letter-spacing: 1em;
+	word-spacing: 0.1em;
+	/*capitalize: Hola Amigos
+	uppercase: HOLA AMIGOS
+	lowercase: hola amigos*/
+	/*letter-spacing: 0.06em;	*/		
+	/*word-spacing: 0.1em;*/
+}
+
+#autor a:hover{ color: #000;}
+
+#copete{
+	color: #444;
+	font-style: italic;
+	text-align: center;
+
+}
+
+#citaBiblio{
+	color: #999;
+	font-size: 0.6875em;
+	/*16x0.6875=11px; */
+	padding-top: 0.5em;
+}
+
+p b{ color: #CC3300;}  
+p cite, p q, p i{ font-style: italic;} 

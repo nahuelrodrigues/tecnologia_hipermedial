@@ -1,0 +1,97 @@
+/* FUENTES:
+http://www.alistapart.com/stories/goingtoprint/
+http://alistapart.com/articles/printyourway
+(con adaptaciones)
+*/
+
+#masthead, #navbar, #sidebar, #metastuff b, #metastuff .discuss, div.discuss {
+/* Desactivar elementos no propios del mundo impreso */
+/*border: 1px solid blue;*/
+ display: none ;
+}
+
+body, #main, #content, .column, #articletext, #footer {  
+/* Desflotar ya que si pifiamos con el ancho del papel en los browser Gecko (Netscape, FFox) los elementos van a aparecer cortados en la impresión */
+/* Sacar márgenes, padding y dejar auto de width para las estructuras contenedoras */ 
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#main{
+/* Si queremos dar width, debemos hacerlo sobre el contendor general y conviene usar porcentaje*/
+/*width: 70%;*/
+}
+
+
+
+
+/* REGLA PARA LINKS, SOLO FUNCIONA EN FFOX Y GECKO*/
+
+#articletext a{
+	border-bottom: 0 solid red;
+	font-weight: bold;
+}
+
+#articletext [href]:after {
+  content: " (" attr(href) ")";
+  font-style: italic;
+  font-weight: normal;
+}
+
+div.full{
+	display: block;
+	margin: 0 auto;
+}
+
+#articletext h2{
+	/* Podemos pasar todos los valores de font-size a pt como en este ejemplo */
+	font-size: 12pt;
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* EJEMPLO ESTILO PARA INSERTAR CORTE DE PAGINA IMPRESORA*/
+/* "always" es el unico valor multibrowser, y es dificil
+aplicarlo máas que en divs o hr sin valor semantico
+*/
+
+
+.finPagina {
+  
+page-break-after:always;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CASOS ESPECIFICOS DE A LIST APART */
+
+
+html body #ish {position: static; width: auto; height: auto;
+  margin: 1em 0 0; padding: 0; border-top: none;
+  font-size: 0.9em; text-align: right;
+  background: none;}
+html body #ish a:link, html body #ish a:visited, html body #ish a em {
+  position: static; display: inline;
+  font-size: 1em; font-weight: normal; width: auto; height: auto;
+  margin: 0; padding: 0;
+  background: none; color: #555;}
+
+html body #content .ishinfo {padding: 0 0 0.5em; margin: -1.5em 0 2em; text-align: left;
+  background: none; position: relative;}

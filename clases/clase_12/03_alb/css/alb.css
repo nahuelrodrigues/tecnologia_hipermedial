@@ -1,0 +1,68 @@
+
+body{
+	color: #FFF;
+	font: normal 100%/1.125  Arial, Helvetica, sans-serif;
+	background-color: #000;
+}
+
+a{ color: #FFF;}
+
+.zapatillas{
+	background: #FFF;
+	color: #000;
+	overflow: hidden;
+}
+
+.zapatillas a{
+	display: block;
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	top: 42%;
+	left: 0;
+	z-index: 3;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.zapatillas a:hover{
+
+	background: rgba(0,0,0,.5) url(../img/moreinfo_hover.png) no-repeat center center;
+}
+
+#descripcion{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #FFF;
+	width: 100%;
+	border-top: 4px solid #F0F0F0;
+}
+
+#descripcion h1{
+			font-size: 0.6875em;
+			line-height: 1.5;
+			color: #2b72b5;
+			width: 142px;
+			margin-right: 8px;
+			float: right;
+			text-align: right;
+			margin-top: 1px;
+}
+
+#descripcion p{
+	font-size: 0.8125em;
+	font-weight: bold;
+	width: 142px;
+	float: right;
+	text-align: right;
+	margin-right: 8px;
+	margin-bottom: 3px;
+}
+
+#descripcion .upCase{text-transform: uppercase;}
+.bids{ color: #909090; font-size: 0.8125em; font-weight: normal;}
+.bids span{ font-size: 1.25em;}
+.tiempo{ color: #ca6829; font-size: 0.8125em; font-weight: normal;}
+
+#descripcion img{ float: left; margin-left: 8px; margin-top: 3px;}

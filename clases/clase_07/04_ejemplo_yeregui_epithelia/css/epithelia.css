@@ -1,0 +1,444 @@
+/* INSPIRACION DISENIO = http://www.rikcat.com/ */
+
+body{
+	color: #C3C3C3;
+	font: normal 11px/13px "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+	background: #000;
+}
+
+h1{ 
+	position: absolute;
+	text-indent: -9999px;
+	}
+	
+/***************** BODY ***********************/
+
+#body{
+	background: url(../img/bckg/fnd_epithelia_body.jpg) no-repeat 0 8px;
+	width: 996px;
+	height: 2850px;
+	margin: 0 auto;
+}
+
+#body li{
+	position: absolute;
+	text-indent: -9999px;
+}
+
+#body li a{
+	overflow: hidden;
+}
+
+.areaMind{ top: 0; left: 360px; }
+.areaEye{ top: 160px; left: 268px;}
+.areaMouth{ top: 355px; left: 423px;}
+.areaHearth{ top: 617px ; left: 507px;}
+.areaPenis{ top: 1304px; left: 460px;}
+.areaHand{ top: 1402px; left: 0;}
+.areaFoot{ top: 2433px; left: 5px;}
+
+.areaMind a{
+	display: block;
+	width: 200px;
+	height: 123px;
+	}
+
+.areaMind a:hover{	
+	background: url(../img/rollovers/cerebro.gif) no-repeat 0 0;
+}
+
+.areaEye a{
+	display: block;
+	width: 305px;
+	height: 187px;
+	}
+
+.areaEye a:hover{	
+	background: url(../img/rollovers/ojo.gif) no-repeat 0 0;
+}
+
+
+.areaMouth a{
+	display: block;
+	width: 74px;
+	height: 75px;
+	}
+
+.areaMouth a:hover{	
+	background: url(../img/rollovers/boca.gif) no-repeat 0 0;
+}
+
+
+.areaHearth a{
+	display: block;
+	width: 150px;
+	height: 180px;
+	}
+
+.areaHearth a:hover{	
+	background: url(../img/rollovers/corazon.gif) no-repeat 0 0;
+}
+
+.clickHearth a:hover{	
+	background: url(../img/rollovers/corazon2.gif) no-repeat 0 0;
+}
+
+.areaPenis a{
+	display: block;
+	width: 227px;
+	height: 340px;
+	}
+
+.areaPenis a:hover{	
+	background: url(../img/rollovers/pene.gif) no-repeat 0 0;
+}
+
+.areaHand {	
+	background: url(../img/bckg/fnd_epithelia_mano.png) no-repeat 0 0;
+	width: 184px;
+	height: 386px;
+	}
+
+.areaHand a{
+	display: block;
+	width: 227px;
+	height: 340px;
+	margin-top: 52px;
+	margin-left: 0;
+	}
+
+.areaHand a:hover{	
+	background: url(../img/rollovers/mano.png) no-repeat 0 0;
+}
+
+.areaFoot a{
+	display: block;
+	width: 300px;
+	height: 304px;
+	}
+
+.areaFoot a:hover{	
+	background: url(../img/rollovers/pie.gif) no-repeat 0 0;
+}
+
+/******************** CLOSE ***************************/
+
+.closeWindows{
+	width: 88px;
+	height: 82px;
+	overflow: hidden;
+	background: #000 url(../img/fnd_ventana_ns_close.png) no-repeat 0 0;
+	position: absolute;
+	z-index: 0;
+}
+
+.closeWindows .closeModals{
+	margin: 0 0 0 15px;
+	font: bold 19px/1em "Courier New", Courier, monospace;
+	color: #FF6666;
+}
+
+.closeWindows .closeModals:hover{ color: #FFF;}
+
+.closeWindows p{ 
+	font: bold 12px/12px Arial, Helvetica, sans-serif;
+	color: #000;
+	height: 22px;
+	margin-bottom: 10px;
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+	}
+
+.closeWindows p span{ 	
+	display: block;
+	padding-top: 4px;
+	margin: 0 30px 0 29px;
+	width: 42px; /* para Chrome */
+	overflow: hidden;
+	}
+	
+#closeWindows .colapse{ margin-right: 3px;}
+
+/******************** MIND ***************************/
+
+.popUp{
+	width: 104px;
+	height: 127px;
+	overflow: hidden;
+	background: #000 url(../img/cerebro/fnd_ventana_ns100x100.png) no-repeat 0 0;
+	position: absolute;
+	z-index: 10;
+}
+
+.popTexto{
+	font: bold 11px/15px Verdana, Arial, Helvetica, sans-serif; /*0.82em*/
+	background-color: #CCC;
+	color: #333;
+}
+
+.popTexto p{
+	margin: 0 10px 0 10px;
+}
+
+.popTexto .author{ margin-top: 10px; text-align: right;}
+
+.close, .colapse{
+  display: block;
+  width: 14px; 
+  height: 14px;
+  margin: 4px 0 0 4px;
+  overflow: hidden;
+  text-indent: -9999px;
+  float: left;
+}
+
+.close:focus, .colapse:focus{
+  outline: 1px dotted #000;
+ }
+
+.colapse{ 
+  float: right;
+  margin: 4px 4px 0 0;
+}
+
+.close:hover{ background: url(../img/cerebro/but_ventana_close_hover.png) no-repeat 2px 2px;}
+.colapse:hover{ background: url(../img/cerebro/but_ventana_colapse_hover.png) no-repeat 3px 2px;}
+
+div.colapsado{ height: 20px; border-bottom: 1px solid #000;} /* div para + especifidad en height */
+
+.popUp h2{ 
+	font: bold 12px/12px Arial, Helvetica, sans-serif;
+	color: #000;
+	height: 22px;
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+	}
+
+.popUp h2 span{ 	
+	display: block;
+	padding-top: 4px;
+	overflow: hidden;
+	margin-left: 32px;
+	width: 42px;
+	}
+
+.noSelect{cursor: default;}
+
+.popUp div{
+	margin: 4px 0 0 8px;
+	width: 84px;
+	height: 88px;
+	padding-top: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+	border-top: 1px solid #BFBFBF;
+	border-right: 1px solid #5A5A5A;
+	border-bottom: 1px solid #5A5A5A;
+	border-left: 1px solid #BFBFBF;
+}
+
+.popUp img{
+	display: block; 
+	float: left;
+	border-top: 1px solid #5A5A5A;
+	border-right: 1px solid #BFBFBF;
+	border-bottom: 1px solid #BFBFBF;
+	border-left: 1px solid #5A5A5A;
+	margin: 0 2px 2px 0;
+	padding: 1px;
+}
+
+.popMind{
+	width: 342px;
+	height: 410px;
+	overflow: hidden;
+	position: absolute;
+	background: #000 url(../img/cerebro/fnd_ventana_ns342x410.png) no-repeat 0 0;
+	z-index: 11;
+}
+
+.popMind h1, .titPop{ 
+	position: static;
+	text-indent: 0;
+	font: bold 12px/12px Arial, Helvetica, sans-serif;
+	color: #000;
+	height: 22px;
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+	}
+
+.popMind h1 span, .titPop span{ 	
+	display: block;
+	padding-top: 4px;
+	overflow: hidden;
+	width: 265px;
+	margin-left: 38px;
+	}
+
+.popMind ul{
+	margin: 9px 0 0 15px;
+	width: 330px;
+	height: 380px;
+	background: url(../img/cerebro/mind_fludd/mind_fludd.gif) no-repeat 0 0;
+}
+
+.popMind ul li{
+	position: absolute;
+	text-indent: -9999px;
+}
+
+.popMind li a{	
+	overflow: hidden;
+}
+
+.intellect{ top: 35px; left: 193px; }
+.imagin{ top: 130px; left: 106px;}
+.sensib{ top: 217px; left: 20px;}
+.mente{ top: 232px ; left: 157px;}
+
+
+.intellect a{
+	display: block;
+	width: 141px;
+	height: 205px;
+	}
+	
+.imagin a{
+	display: block;
+	width: 114px;
+	height: 115px;
+}
+	
+.sensib a{
+	display: block;
+	width: 114px;
+	height: 118px;
+}
+	
+.mente a{
+	display: block;
+	width: 169px;
+	height: 95px;
+}
+
+.intellect a:hover{background: url(../img/cerebro/mind_fludd/fludd_intellect_ov.gif) no-repeat 0 0;}
+.imagin a:hover{background: url(../img/cerebro/mind_fludd/fludd_imagin_ov.gif) no-repeat 0 0;}
+.sensib a:hover{background: url(../img/cerebro/mind_fludd/fludd_sensib_ov.gif) no-repeat 0 0;}
+.mente a:hover{background: url(../img/cerebro/mind_fludd/fludd_mente_ov.gif) no-repeat 0 0;}
+
+
+.popIntel, .popImag{
+	width: 290px;
+	height: 352px;
+	overflow: hidden;
+	position: absolute;
+	background: #000 url(../img/cerebro/intellectualis/fnd_ventana_ns352x290.png) no-repeat 0 0;
+	z-index: 11;
+}
+
+.popIntel h2 span, .titPop span{ 	
+	margin-left: 84px;
+	width: 124px;
+	text-align: center;
+}
+
+.popImag{
+	background: #000 url(../img/cerebro/imaginabilis/fnd_ventana_ns132x132.png) no-repeat 0 0;
+	width: 154px;
+	height: 180px;
+	top: 78px;
+	left: 377px;
+	}
+	
+	.popImag .titPop span{ 	
+	display: block;
+	padding-top: 4px;
+	overflow: hidden;
+	margin-left: 32px;
+	width: 90px;
+	}
+	
+	.popImag .botAnimar{
+		display: block;
+		overflow: hidden;
+		text-indent: -9999px;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		background: url(../img/cerebro/imaginabilis/bot_punto.gif) no-repeat 0 0;
+		}
+		
+	
+	.popImag img{ 
+	  float: none; 
+	  margin: 0 0 0 12px;
+	  padding: 0;
+	}
+	
+	.limiteImag{
+	  overflow: hidden;
+	  position: relative;
+	  left: 5px;
+	  width: 142px;
+	}
+	
+	.popImag blockquote, .popImag h2{
+		position: absolute;
+		top: 80px; 
+		left: 160px; 
+		color: #EB4E13;
+		font: bold 142%/1.41em "Times New Roman", Times, serif;
+		text-align: center;
+	}
+	
+	.popImag blockquote{ color: #0000FF; top: 180px; left: 40px; width: 56px;}
+
+
+	
+.bckNros{
+	width: 250px;
+	height: 293px;
+	margin: 15px 0 0 20px;
+	background: url(../img/cerebro/intellectualis/intelectuallis_nros_fondo.gif) repeat 0 0;
+}
+
+/* Posicion sin JS de las ventanas */
+
+.closeWindows{ top: 0; left: 936px;}
+
+#circulos1{top: 423px; left: 0;}
+#circulos2{top: 423px; left: 104px;}
+#texto3{top: 423px; left: 208px;}
+#circulos4{top: 423px; left: 312px;}
+#circulos5{top: 423px; left: 416px;}
+#circulos6{top: 423px; left: 520px;}
+#texto7{top: 423px; left: 624px;}
+#circulos8{top: 423px; left: 728px;}
+#circulos9{top: 423px; left: 832px;}
+
+#texto10{top: 296px; left: 832px; z-index: 5;}
+#circulos11{top: 225px; left: 832px; z-index: 3;}
+#texto12{top: 127px; left: 832px ;z-index: 4;}
+
+#circulos13{top: 0; left: 832px;}
+#circulos14{top: 0; left: 728px;}
+#circulos15{top: 0; left: 624px;}
+#texto16{top: 0; left: 520px;}
+#circulos17{top: 0; left: 416px;}
+#circulos18{top: 0; left: 312px;}
+#circulos19{top: 0; left: 208px;}
+#texto20{top: 0; left: 104px;}
+#circulos21{top: 0; left: 0;}
+
+#mind22{top: 78px; left: 98px; z-index: 2;}
+
+#intellectualis22a{top: 113px; left: 403px;}
+

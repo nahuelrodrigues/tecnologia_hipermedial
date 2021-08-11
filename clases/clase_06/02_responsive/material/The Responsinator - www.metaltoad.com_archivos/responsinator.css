@@ -1,0 +1,265 @@
+/*
+ * Styles for the top bar start
+ */
+form {
+    margin: 7px 0px 0px 20px;
+    padding: 0px;
+    float: left;
+}
+
+input#url:focus {
+    background: #24383e;
+    color: white;
+}
+
+div.who {
+    float: right;
+    margin-right: 20px;
+}
+
+.who span {
+    opacity: 0.4;
+}
+
+.who a {
+    color: white;
+    text-decoration: none;
+}
+
+.who a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* this is a temporary hack for placeholder text */
+input::-webkit-input-placeholder {
+    color:    #4a6469;
+}
+input:-moz-placeholder {
+    color:    #4a6469;
+}
+/* this is a temporary hack for placeholder text */
+
+#tools input[type="submit"] {
+    background: #8a9a9f;
+    border: none;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-family: georgia;
+    font-size: 11px;
+    opacity: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: white;
+    margin-left: 5px;
+}
+
+/*
+ * Styles for the top bar end
+ */
+ 
+/*
+ * About page styles start
+ */
+
+section#about {
+    max-width: 650px;
+    margin: 0px auto 0px auto;
+    padding: 12px 20px 0px 20px;
+    line-height: 160%;
+    font-family: "Georgia", serif;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 20px;
+    color: #222;
+    margin: 40px 0px 0px 0px;
+    clear: left;
+}
+
+section#about p, section#about li {
+    font-weight: normal;
+    font-size: 16px;
+    color: #222;
+}
+
+section#about a {
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+}
+
+section#about a:hover, section#about a#buyBeerLink:hover {
+    color: #111;
+    border-bottom: 1px solid #666;
+}
+
+section#about a#buyBeerLink {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+section#about form {
+    display: none
+}
+
+section#about form#formaddext {
+    display: block;
+    margin: -10px 0 40px;
+    font-size: 13px;
+    color: #666;
+}
+
+section#about #addext {
+    margin-right: 5px;
+}
+
+form#formaddext label, form#formaddext input {
+    cursor: pointer;
+}
+
+html.no-js section#about form {
+    display: block;
+}
+
+section#about ul {
+     margin: 10px 0px 0px 18px;
+     padding: 0px;
+     list-style-type: circle;
+}
+
+section#about a#back {
+     font-size: 13px;
+     border-bottom: none;
+     border-bottom: 1px solid #ddd;
+     padding-bottom: 3px;
+}
+
+section#about p {
+    margin: 10px 0px 15px 0px;
+}
+
+#aboutlink {
+    text-align: center;
+    margin: 40px;
+    display: block;
+}
+
+a#bookmarklet {
+    background: #ddd;
+    padding: 1px 4px 1px 4px;
+}
+
+/*
+ * About page styles end
+ */
+
+/*
+ * Books section styles start
+ */
+
+ #books {
+     font-size: 14px;
+     line-height: 22px;
+     margin: 20px 0px 20px 0px;
+     padding: 30px 0px 10px 0px;
+     clear: both;
+ }
+
+ .books_wrapper {
+     max-width: 1000px;
+     margin: auto;
+     border-bottom: 1px solid #eee;
+     padding-bottom: 15px;
+}
+
+ .books_wrapper div {
+     width: 220px;
+     display: inline-block;
+     padding-right: 30px;
+     vertical-align: top;
+ }
+
+ .books_wrapper div p {
+     margin-top: 10px
+ }
+
+ .books_wrapper a, #aboutlink a {
+     color: red;
+     border-bottom: 1px solid #efefef;
+     padding-bottom: 1px;
+ }
+
+ .books_wrapper a.white_border {
+     border-bottom: 1px solid white;
+ }
+
+ .books_wrapper a:hover, #aboutlink a:hover {
+     border-bottom: 1px solid #999;
+ }
+
+ .books_wrapper a.white_border:hover {
+     border-bottom: 1px solid #ccc;
+ }
+
+ #books .light_grey {
+     color: #999;
+ }
+
+ .books_wrapper h2 {
+     margin: 30px 0px 30px 0px;
+     font-size: 16px;
+     background: url("../images/1px-grey-line.png") left 50% repeat-x;
+     text-align: center;
+ }
+
+ .books_wrapper h2 span {
+     background: white;
+     padding: 0px 10px 0px 10px;
+ }
+
+ .about_body .books_wrapper h2 {
+     text-align: left;
+     font-size: 20px;
+     padding-left: 165px;
+ }
+
+ .about_body #books {
+     margin-top: 50px;
+     padding-top: 0px;
+ }
+
+/*
+ * Books section styles end
+ */
+
+
+/*
+ * Responsive books section styles start
+ */
+
+@media only screen and (max-width : 1000px) {
+
+    .books_wrapper {
+        min-width: 240px;
+        text-align: center;
+    }
+
+    .about_body .books_wrapper h2, .about_body .books_wrapper h2 span {
+        padding-left: 0px;
+        background: none;
+        margin-left: 0;
+        text-align: center;
+   }
+
+}
+/*
+ * Responsive books section style end
+ */
+ 
+ #aboutlink a em {
+ }

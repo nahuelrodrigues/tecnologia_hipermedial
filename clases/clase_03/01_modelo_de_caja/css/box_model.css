@@ -1,0 +1,26 @@
+/*********** TAGS COMUNES *************/
+body{
+	/*background: #FAFAFA url(../img/fnd_body.jpg) repeat-y top center;*/ /*fixed*/ 
+	/* Ejemplo de repeat http://www.designspongeonline.com */
+	/* Ejemplo de repeat-x http://portal.educ.ar/prueba/*/
+	color: #000;
+	font: normal 100%/1.125 Verdana, Arial, Helvetica, sans-serif;
+	background: url(../img/fnd_body.jpg) repeat-y top center fixed;
+}
+
+/*********** LAYOUT GENERAL *************/
+
+p{
+	outline: 1px solid red;
+	width: 500px;
+	height: 254px;
+	overflow: hidden;
+	border: 5px solid green;
+	background: #009933  url(../img/cork-bg.png) repeat 30px 10px;
+	margin: 20px auto 70px auto;
+	padding: 40px 40px 40px 40px;
+	/*corta el texto a partir del fin de la caja, tiene peso dentro de la caja a comparación del outline*/
+
+	/*position:relative;*/
+	/*margin: 100px auto;*/
+}

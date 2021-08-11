@@ -1,0 +1,155 @@
+/* FUENTE DISEÑO: http://www.designspongeonline.com/ */
+
+/*********** TAGS COMUNES *************/
+body{
+	background:url(../img/bckg/fnd_body_arpillera.jpg) repeat 0 0;
+	color: #333;
+	font: normal 100%/1.125 Georgia, "Times New Roman", Times, serif;
+}
+
+/*********** LAYOUT GENERAL *************/
+
+#contenedor{
+	margin: 0 auto 0 auto;
+	padding: 35px 0 50px 0;
+	position: relative;
+	width: 559px;
+	background: #F4F4F4 url(../img/bckg/lace_bg2.jpg) repeat-y 0 0;
+}
+
+#titSitio{
+	background: url(../img/titulos/design_sponge.jpg) no-repeat 0 0;
+	width: 363px;
+	height: 105px;
+	margin: 0 0 15px 64px;
+	text-indent: -9999px;
+}
+
+#titSitio a{ display: block; width: 100%; height: 100%;}
+
+article{
+	padding: 0 45px 0 64px;
+}
+
+
+article h1{
+	width: 534px;
+	height: 128px;	
+	background: url(../img/titulos/tit_before_and_after.jpg) no-repeat 0 0;
+	margin-bottom: 1.5em;
+	margin-left: -39px; /* Los valores negativos no funcionan con shorthand margin*/
+	text-indent: -9999px;
+}
+
+article h2{
+	color: #FF0000;
+	font: 1.125em/1 Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	letter-spacing: 0.0625em;
+	padding: 1.5em 0;
+}
+
+
+article img{
+	padding-bottom: 1.5em;
+}
+
+article p{
+	font-size: 0.875em;
+	line-height: 1.5;
+	margin: 0 0 1.5em 0;
+}
+
+article p i, article p em{ font-style: italic;}
+
+article p strong, article p b{ font-weight: bold;}
+
+article ul{
+	list-style: none; /* aunque no hace falta porque ya está tocado en el reset */
+	margin-left: -14px;
+}
+
+article ul li{
+	font-size: 0.875em;
+	background: url(../img/bullets/bull_rojo.gif) no-repeat 0 10px;
+	padding: 4px 0 6px 15px;
+	height: 1%;
+}
+
+article span.traduccion{
+	font-style: italic;
+	color: #666;
+}
+
+
+
+/**************** LINKS ***********************/
+
+
+article a{
+	text-decoration: none;
+	color: #FF0000;
+	border-bottom: 1px solid #FFCCCC;
+}
+
+article a:hover{
+	color: #D6D83A;
+	border-bottom: 1px solid #FEFFD7;
+}
+
+
+/******** POSITION ABSOLUTE **********/
+
+aside{ 
+	color: #FFF;
+	position:absolute;
+	top:160px;
+	right:-120px;
+	/* Ver en el HTML el fix para IE6 de PNG32 con alpha channel */
+	background: url(../img/bckg/fnd_search.png) no-repeat 0 0;
+z-index: ;
+	/* Los valores top, right, bottom y left se toman de acuerdo al último elemento posicionado como relative o absolute. En este caso #contenedor. Si no hay nada posicionado antes, se toma el 0,0 del <body> */
+	
+	
+	
+	padding: 29px 0 11px 9px;
+	}
+
+/* MOSTRAR FIXED */	
+	
+/*aside{ 
+	position: fixed;
+	right: auto;
+	top: 20px;
+	right: 14%;
+	}*/
+
+aside label{
+	display: block;
+	text-indent: -9999px;
+	height: 1px;
+	width: 1px;
+	font-size: 0.0625em;
+}
+	
+aside input{
+	width: 128px;
+}
+
+aside #texto{
+	width: 110px;
+}
+
+aside #buscar{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+	width: auto;
+	background: none;
+	border: none;
+	font-weight: bold;
+	color: #FFF; 
+	padding: 0 5px 0 2px;
+	cursor: pointer;
+}
+
+aside #buscar:hover{ color: #000;}

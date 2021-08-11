@@ -1,0 +1,166 @@
+/*********** TAGS COMUNES *************/
+body{
+	background: #282A2C url(../img/home/bckg/fnd_portal_general.jpg) repeat-x 0 0;
+	color: #7E7E7E;
+	font: normal 100%/1.125 Verdana, Arial, Helvetica, sans-serif;
+}
+
+img{border: 0;}
+
+p, td, li{
+	font-size: 0.875em;
+	line-height: 1.31;
+}
+
+
+/**********  LAYOUT ***************/
+
+#contenedor {
+	width: 900px;
+	margin: 0 auto 0 auto;
+	background: #277e96 url(../img/bckg/fnd_cont.gif) repeat-x 0 0;
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+
+
+#contenedor nav ul{
+	list-style: none;
+	font-size: 0.875em;
+	padding-left: 180px;
+	padding-bottom: 110px;
+}
+
+#ofertaCalendario {
+	float: left;
+	border-right: 1px solid #418EA3;
+	padding-right: 20px;
+	padding-left: 30px;
+	margin-right: 20px;
+}
+	
+#infoConcurso {
+	width: 273px;
+	float: left;
+	border-right: 1px solid #418EA3;
+	padding-bottom: 20px;
+}			
+	
+#infoContacto {
+	width: 274px;
+	float: right;
+	margin-bottom: 60px;
+}
+
+footer {
+	clear: both;
+	border-top: 1px solid #418EA3;
+	font-size: 0.875em;
+	color: #282A2C;
+	margin-left: 25px;
+	padding-top: 10px;
+}
+
+/************ LINKS ****************/
+
+#contenedor a {
+	color: #FFF;
+	text-decoration: none;
+	border-bottom: 1px solid #68A5B6;
+}
+	
+#contenedor a:hover {
+	color: #EAE8B3;
+}
+
+/*********** MENÚ *************/
+
+#contenedor nav ul li{	
+float:left;
+		}
+	
+		#contenedor nav ul li a{
+
+			display: block;
+			width: 159px;
+			border: none;
+			padding: 14px 0 14px 0;
+			text-align: center;
+			text-decoration: none;
+			background-image: url(../img/botones/bot_quienes.jpg);
+			color: #000;
+
+		}
+		
+		#contenedor nav ul li a:hover{
+			color: #FFF;
+
+		}
+
+		#contenedor nav ul .novedades a{ background-image: url(../img/botones/bot_novedades.jpg);
+			width: 154px;
+
+		}
+		#contenedor nav ul .trabajo a{ background-image: url(../img/botones/bot_trabajo.jpg);
+			width: 117px;
+		}
+		
+		#contenedor nav ul .faq a { background-image: url(../img/botones/bot_faq.jpg);
+			width: 111px;
+		}
+
+			#contenedor nav ul .novedades a:hover{
+				background-image: url(../img/botones/bot_novedades_ov.jpg);
+
+			}
+					#contenedor nav ul .quienes a:hover{
+				background-image: url(../img/botones/bot_quienes_ov.jpg);
+
+			}
+						#contenedor nav ul .trabajo a:hover{
+				background-image: url(../img/botones/bot_trabajo_ov.jpg);
+
+			}
+
+						#contenedor nav ul .faq a:hover{
+				background-image: url(../img/botones/bot_faq_ov.jpg);
+
+			}
+/*------------------------------ footer ------------------------------*/
+
+
+#infoContacto p, #infoConcurso p, #ofertaCalendario p{
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+#ofertaCalendario p{
+	padding-right: 14px;
+}
+	
+#contenedor p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	line-height: 17px;
+	color: #eae8b3;
+}	
+	
+	
+#contenedor h2 {
+	font: normal 156%/1em Georgia, "Times New Roman", Times, serif;
+	font-style: oblique;
+	color:#282a2c;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 19px;
+}
+
+footer small{
+	color: #000;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	line-height: 17px;
+}
+	
+/*------------------------------ extra ------------------------------*/
+

@@ -1,0 +1,126 @@
+/**************** TAGS COMUNES ******************/
+body{
+	background-color:#FFF;
+	/*color: #000;*/
+	font: normal 100%/1.125 Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/******************** LAYOUT GENERAL ******************/
+
+#contenedor{
+	margin: 0 auto 0 auto;
+	padding: 0;
+	position: relative;	
+	width: 760px;
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+
+#textoNota{
+	width: 485px;
+	float: left
+}
+
+
+#imagenNota{
+	width: 235px;
+	float: right;
+	padding-top: 18em;
+}
+
+p{
+	font-size: 0.6875em;
+	line-height: 1.41;
+}
+
+b{ font-weight: bold;}
+i{ font-style: italic;}
+
+
+/******************* ESTILOS IMAGEN *****************/
+
+#imagenNota img{
+	margin-bottom: 15px;
+}
+
+#imagenNota p{
+	padding-right: 60px;
+}
+
+
+/***************** ESTILOS TEXTO NOTA *****************/
+
+header{ height: 18em;}
+
+#textoNota h1{
+	color: #FF0000;
+	font: normal 2.25em/1.01em Georgia, "Times New Roman", Times, serif;
+	margin-left: 25px;
+}
+
+#textoNota p{
+	line-height: 1.51em;
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+
+#textoNota p.volanta{
+	padding-top: 40px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.0625em;
+}
+
+
+#textoNota p.copete{
+	margin-top: 15px;
+	font: bold 1.125em/1.51 "Times New Roman", Times, serif;
+}
+
+#textoNota p.autor{
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.0625em;
+}
+
+
+/****************  ESPECIFICIDAD    ***********************/
+
+/*
+p tiene una especificidad de 1 
+(1 selector HTML)
+
+div p tiene una especificidad de 2 
+(2 selectores HTML; 1+1)
+
+.copete tiene una especificidad de 10 
+(1 selector de tipo class)
+
+div p.copete tiene una especificidad de 12 
+(2 selectores HTML y un selector de tipo class; 1+1+10)
+
+#copeteSuarez tiene una especificidad de 100 
+(1 selector id)
+
+body #content p.copete tiene una especificidad de 112 
+(selector HTML,  selector id, selector HTML, selector class; 1+100+10+1)
+*/
+
+body p {
+	color:#000099;
+}
+
+p{ color: red;
+
+}
+
+.copete { color: #009900;
+
+}
+#copeteSuarez { color:#00FFFF;
+
+}
+

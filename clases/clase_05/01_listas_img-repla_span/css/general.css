@@ -1,0 +1,70 @@
+/* FUENTE DISEÑO: http://www.designspongeonline.com/ */
+
+/*********** TAGS COMUNES *************/
+body{
+	background:url(../img/bckg/fnd_body_arpillera.jpg) repeat 0 0;
+	color: #333;
+	font: normal 100%/1.125 Georgia, "Times New Roman", Times, serif;
+}
+
+/*********** LAYOUT GENERAL *************/
+
+#contenedor{
+	margin: 0 auto 0 auto;
+	padding: 35px 0 50px 0;
+	position: relative;	
+	width: 559px;
+	background: #F4F4F4 url(../img/bckg/lace_bg2.jpg) repeat-y 0 0;
+}
+
+#titSitio{
+}
+
+#titSitio a{ display: block; width: 100%; height: 100%;}
+
+article{
+	padding: 0 45px 0 64px;
+}
+
+
+article h1{
+}
+
+article h2{
+	color: #FF0000;
+	font: 1.125em/1 Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	letter-spacing: 0.0625em;
+	padding: 1.5em 0;
+}
+
+
+article img{
+	padding-bottom: 1.5em;
+}
+
+article p{
+	font-size: 0.875em;
+	line-height: 1.5;
+	margin: 0 0 1.5em 0;
+}
+
+article p i, article p em{ font-style: italic;}
+
+article p strong, article p b{ font-weight: bold;}
+
+article ul{
+	list-style: none; /* aunque no hace falta porque ya está tocado en el reset */
+}
+
+article ul li{
+}
+
+
+/**************** LINKS ***********************/
+/* a:link a:visited a:hover a:focus a:active */
+/* latente, visitado, rollover, focus con teclado, en click */
+
+article a{
+
+}

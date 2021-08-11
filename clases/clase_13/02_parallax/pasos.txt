@@ -1,0 +1,80 @@
+1. 
+
+	// para todos los background
+  $('section[data-type="background"]').each(function(){
+  // tomamos posición actual
+    var $self = $(this),
+    offsetCoords = $self.offset(),
+    topOffset = offsetCoords.top;
+		//objeto con posicion actual de offset por cada elemento
+		//offset es relativo al document, no al parent
+    
+		//evento scroll
+		$(window).scroll(function(){			
+			
+			
+		});
+  
+	});	// each data-type
+
+
+3. 
+
+
+//console.log($window.scrollTop()); //psoció nen px de scroll vertical
+			// yPos será negativo porque sube
+			var yPos = -($window.scrollTop() / $self.data('speed')); //speed 1 es p ej el article	
+			
+			// sumar el offset y o valor de top en css
+			if ($self.data('offsetY')) {
+				yPos += $self.data('offsetY');
+			}
+			
+			// Parmamos el texto de background-position
+			var coords = '50% '+ yPos + 'px';
+			// Movemos el background
+			$self.css({ 'background-position': coords });
+
+
+4.
+
+   <div class="zapatillas" data-type="sprite" data-offsetY="450" data-Xposition="50%" data-speed="2"></div>
+
+
+5. 		
+
+			// para todos los sprites
+			$('[data-type="sprite"]', $self).each(function() {
+					
+				// Cacheamos el sprite
+				var $sprite = $(this);
+			
+				// mismo procedimiento que el background
+				var yPos = -($window.scrollTop() / $sprite.data('speed'));					
+				var coords = $sprite.data('Xposition') + ' ' + (yPos + $sprite.data('offsetY')) + 'px';
+					
+				$sprite.css({ 'background-position': coords });													
+					
+			}); // sprites
+
+
+6.
+
+<section class="story" id="second" data-speed="4" data-type="background" data-offsetY="750">
+    <div class="zapatillas" data-type="sprite" data-offsetY="2000" data-Xposition="50%" data-speed="2"></div>
+ <article>
+  <p class="tagline">One shoe does good, the other shoe kicks ass.</p>
+	<h1>Nike Free TR Fit</h1>
+   <p class="explicacion">The Free TR Fit is designed with a lower environmental impact using <a data-omniturelink="true" href="#">environmentally preferred rubber</a>, water-based cementing and recycled polyester. That means every step in the multi-directional flex groove outsole replicates the foot's natural movement and helps women get more out of their workout without leaving a huge environmental footprint. Everyone's a winner.</p>
+	 <a class="outlink" href="#">Learn more</a>
+ </article>
+</section>
+
+
+7. 
+
+		#second{ background: url(../img/bg_n7.jpg) 50% 0 no-repeat fixed;}
+		
+		#second .zapatillas{
+		background: url(../img/fg_shoe.png) 50% 2000px no-repeat fixed;
+		}

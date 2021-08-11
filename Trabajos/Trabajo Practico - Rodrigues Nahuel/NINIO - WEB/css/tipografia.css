@@ -1,0 +1,254 @@
+body{
+
+	color: #333;
+    font: normal 100%/1.125 Helvetica; Arial , sans-serif;
+	 ;
+	 background-color: ;
+	background-image: 
+	 url(../img/BACK-1copia.png) ,
+
+	url(../img/background3.jpg) 
+	 ;
+	background-position: right top, right top;
+	background-repeat:repeat-y,  repeat;
+	background-attachment: fixed, scroll
+;
+		
+				
+
+
+}
+
+/************************* header *****************************/
+#logo {
+
+	
+	margin-bottom: 25px;
+	margin-left: 242px;
+
+}
+
+
+/************************* CONTENEDOR *****************************/
+#contenedor{
+	width: 600px;
+	margin: 23px 200px 0px auto;
+
+
+}
+
+#header{
+
+	width:640px;
+		background-color: #fff
+	
+}
+
+#inicio{
+	background-color: #fff;
+	width: 600px;
+	padding: 0 20px;
+	box-shadow: 1px 1px 1px 1px;
+	-moz-box-shadow: 1px 1px 1px 1px rgba( 0, 0,0,0.5);
+}
+
+#bio{
+	background-color: #fff;
+	width: 600px;
+	padding: 0 20px;
+	box-shadow: 1px 1px 1px 1px;
+	-moz-box-shadow: 1px 1px 1px 1px rgba( 0, 0,0,0.5);
+}
+
+
+
+#video{
+	background-color: #fff;
+	width: 600px;
+	padding: 0 20px;
+	box-shadow: 1px 1px 1px 1px;
+	-moz-box-shadow: 1px 1px 1px 1px rgba( 0, 0,0,0.5);
+
+}
+
+#web{
+	background-color: #fff;
+	width: 600px;
+	padding: 0 20px;
+	box-shadow: 1px 1px 1px 1px;
+	-moz-box-shadow: 1px 1px 1px 1px rgba( 0, 0,0,0.5);
+
+}
+
+#CV{
+	background-color: #fff;
+	width: 600px;
+	padding: 0 20px;
+	box-shadow: 1px 1px 1px 1px;
+	-moz-box-shadow: 1px 1px 1px 1px rgba( 0, 0,0,0.5);
+
+}
+
+
+/************************* BOTONERA *****************************/
+
+#navegacion {
+	width: 90px;
+	float: left;
+	position: fixed;
+	position-left:50px;
+	margin-left: -450px;
+	margin-top: -200px;
+	margin-bottom: 10px;
+	list-style:none;
+	font-size: 4.5em;
+
+	
+}
+
+
+	#navegacion li { 
+		margin-bottom: 2px;
+		 /* Evitamos el WhiteSpace bug en IE6 */
+		}
+
+		#navegacion a {
+		
+			display: block;
+			background-color: transparent;
+			margin-left: 80px;
+			color: black;
+			padding: 0px 0px 0px 0px;
+			text-decoration: none;
+			font-weight: bold;
+
+	
+
+
+-webkit-transition: all 0.5s ease 0s;
+-moz-transition: all 0.5s ease 0s;
+-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+
+
+
+}
+
+		#navegacion a:hover,  #navegacion a.activo
+		{
+			color:white;
+			background-color: none;
+			border-color: transparent transparent #f59ba7 transparent;
+			transform: scale(1.2);
+
+
+		
+		}
+/******************** TÍTULOS Y TEXTO *****************************/
+
+
+h1{
+	font-family: Helvetica;
+	font-size: 1.8em;  
+	font-weight: normal;
+	border-bottom: 1px solid #CCC;
+text-shadow: 0 0 1px #919090;
+
+}
+
+h2{
+	font-family: Helvetica;
+	font-size: 1.45em;  
+	padding-top: 30px;	
+}
+
+
+p cite, p q, p i{ font-style: italic;} 
+
+p{	
+	font-size: 0.875em;
+	line-height: 1.2em;
+	text-align: left;
+	width:610px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+
+}
+
+a{text-decoration:none} 
+a:hover{text-decoration: underline ; color:black;} 
+/************************************************/
+
+
+
+/************************* ESTILO DE TEXTO *****************************/
+#autor a{	
+	text-decoration: none;
+	padding-right: 10px;
+	color: #666;		
+	text-transform: normal;
+	letter-spacing: 1em;
+	word-spacing: 0.1em;
+}
+#materialutilizado {
+	font-size: 0.875em;
+	line-height: 1.5em;
+}
+
+#listadetemas{	
+	font-size: 0.875em;
+	line-height: 1.5em;
+	font-family: Helvetica;
+	text-transform: normal;
+	text-decoration: none;
+}
+#autor {
+	font-size: 0.875em;
+	font-weight: bold; 
+	background-color: #E3E3E3;
+	color: #666;
+	padding: 9px 0 10px 20px;
+	width: 620px;
+	margin-bottom: 5px;
+	margin-right: -20px;
+	margin-left: 0px;
+	text-align: right
+}
+
+#fotodetalle{
+	color: #999;
+	font-size: 0.6875em;
+	padding-top: 0em;
+	text-align: center;
+}
+
+#citabiblio{
+	color: #999;
+	font-size: 0.6875em;
+	padding-top: 0em;
+	text-align: right
+}
+
+a{
+	color:grey;
+}
+
+
+/************************* FOOTER *****************************/
+
+#footer{
+	width: 600px;
+	font-size: 0.875em;
+	font-weight: bold; 
+	background-color: #E3E3E3;
+	color: #666;
+	padding: 20px;
+	margin-bottom: 15px;
+	margin-right: -20px;
+	margin-left: 0px;
+	word-spacing: 150px;
+	text-align: center;
+	display: block;
+
+
+	}

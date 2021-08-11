@@ -1,0 +1,201 @@
+/* INSPIRACION DISENIO = http://www.rikcat.com/ */
+
+body{
+	color: #C3C3C3;
+	font: normal 11px/13px "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+	background: #000;
+}
+
+.audible{ 
+	position: absolute;
+	text-indent: -9999px;
+	}
+	
+/***************** BODY ***********************/
+
+#body{
+	background: url(../img/bckg/fnd_epithelia_body.jpg) no-repeat 0 8px;
+	width: 996px;
+	height: 2850px;
+	margin: 0 auto;
+}
+
+#body li{
+	position: absolute;
+	text-indent: -9999px;
+}
+
+#body li a{
+	overflow: hidden;
+}
+
+.areaMind{ top: 0; left: 360px; }
+.areaEye{ top: 160px; left: 268px;}
+.areaMouth{ top: 355px; left: 423px;}
+.areaHearth{ top: 617px ; left: 507px;}
+.areaPenis{ top: 1304px; left: 460px;}
+.areaHand{ top: 1402px; left: 0;}
+.areaFoot{ top: 2433px; left: 5px;}
+
+.areaMind a{
+	display: block;
+	width: 200px;
+	height: 123px;
+	}
+
+.areaMind a:hover{	
+	background: url(../img/rollovers/cerebro.gif) no-repeat 0 0;
+}
+
+.areaEye a{
+	display: block;
+	width: 305px;
+	height: 187px;
+	}
+
+.areaEye a:hover{	
+	background: url(../img/rollovers/ojo.gif) no-repeat 0 0;
+}
+
+
+.areaMouth a{
+	display: block;
+	width: 74px;
+	height: 75px;
+	}
+
+.areaMouth a:hover{	
+	background: url(../img/rollovers/boca.gif) no-repeat 0 0;
+}
+
+
+.areaHearth a{
+	display: block;
+	width: 150px;
+	height: 180px;
+	}
+
+.areaHearth a:hover{	
+	background: url(../img/rollovers/corazon.gif) no-repeat 0 0;
+}
+
+.clickHearth a:hover{	
+	background: url(../img/rollovers/corazon2.gif) no-repeat 0 0;
+}
+
+.areaPenis a{
+	display: block;
+	width: 227px;
+	height: 340px;
+	}
+
+.areaPenis a:hover{	
+	background: url(../img/rollovers/pene.gif) no-repeat 0 0;
+}
+
+.areaHand {	
+	background: url(../img/bckg/fnd_epithelia_mano.png) no-repeat 0 0;
+	width: 184px;
+	height: 386px;
+	}
+
+.areaHand a{
+	display: block;
+	width: 227px;
+	height: 340px;
+	margin-top: 52px;
+	margin-left: 0;
+	}
+
+.areaHand a:hover{	
+	background: url(../img/rollovers/mano.png) no-repeat 0 0;
+}
+
+.areaFoot a{
+	display: block;
+	width: 300px;
+	height: 304px;
+	}
+
+.areaFoot a:hover{	
+	background: url(../img/rollovers/pie.gif) no-repeat 0 0;
+}
+
+/******************** HEARTH ***************************/
+
+.popCrist{
+	width: 172px;
+	height: 230px;
+	overflow: hidden;
+	position: absolute;
+	top: 150px;
+	left: 300px;
+	background: #000 url(../img/corazon/fnd_ventana_ns172x230.png) no-repeat 0 0;
+	z-index: 11;
+}
+
+.popCrist h2{ 
+	position: static;
+	text-indent: 0;
+	font: bold 12px/12px Arial, Helvetica, sans-serif;
+	white-space: nowrap;
+	color: #000;
+	height: 18px; 
+	cursor: default;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	user-select: none;
+	}
+
+.popCrist h2 span{ 	
+	display: block;
+	margin-top: 4px;
+	margin-left: 36px;
+	height: 14px;
+	overflow: hidden;
+	width: 100px;
+	}
+	
+.popCrist img{
+	margin: 10px 0 0 15px;
+}
+
+/* cerrar / colapsar */
+
+.close, .colapse{
+  display: block;
+  width: 14px; 
+  height: 14px;
+  margin: 4px 0 0 4px;
+  overflow: hidden;
+  text-indent: -9999px;
+  float: left;
+}
+
+.close:focus, .colapse:focus{
+  outline: 1px dotted #000;
+ }
+
+.colapse{ 
+  float: right;
+  margin: 4px 4px 0 0;
+}
+
+.close:hover{ background: url(../img/cerebro/but_ventana_close_hover.png) no-repeat 2px 2px;}
+.colapse:hover{ background: url(../img/cerebro/but_ventana_colapse_hover.png) no-repeat 3px 2px;}
+
+div.colapsado{ height: 21px; border-bottom: 1px solid #000;} /* div para + especifidad en height */
+
+.pasame{
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	color: #FFF;
+	text-align: center;
+	background: #6699CC;
+	border: 2px solid #FFF;
+	font-weight: bold;
+}
